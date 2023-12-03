@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="script.js">
 </head>
 <body>
     <div class="header">
@@ -29,7 +30,10 @@
                         <li><a href="">Account</a></li>
                     </ul>
                 </nav>
-                <img src="cart2.png" width="40px" height="40px" style="margin-right:20px;">
+                <div class="cart-icon">
+                    <p style="color:black"> <img src="cart2.png" width="40px" height="40px" style="margin-right:20px;cursor: pointer;"><br><span class="cart-priceT">0</span><sup>vnd</sup></p>
+                </div>
+                
                 <img src="menu.png" class="menu-icon" onclick="menutoggle()">
             </div>
             <div class="row">
@@ -42,6 +46,19 @@
                 <div class="col-2">
                     <img src="7b4a2de8945a5c69473011de9775c02d.png" alt="">
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="slider-frame">
+        <div class="slide-images">
+            <div class="img-container">
+                <img src="slide1.webp" width="100%" height="50%">
+            </div>
+            <div class="img-container">
+                <img src="slide2.webp" width="100%" height="50%">
+            </div>
+            <div class="img-container">
+                <img src="slide3.webp" width="100%" height="50%">
             </div>
         </div>
     </div>
@@ -78,35 +95,10 @@
                     <!-- 1/2 ngoi sao -->
                     <ion-icon name="star-half"></ion-icon>
                 </div>
-                <p>680.000 vnd</p>
-            </div>
-	    <div class="col-4">
-                <img src="kumpoo sakura.webp">
-                <h4>Kumpoo Sakura</h4>
-                <div class="rating">
-                    <!-- ngoi sao nguyen ven -->
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <!-- 1/2 ngoi sao -->
-                    <ion-icon name="star-half"></ion-icon>
+                <div class="product-item-text">
+                    <p><span>680.000</span><sup>vnd</sup></p>
                 </div>
-                <p>680.000 vnd</p>
-	    </div>
-            <div class="col-4">
-                <img src="kumpoo sakura.webp">
-                <h4>Kumpoo Sakura</h4>
-                <div class="rating">
-                    <!-- ngoi sao nguyen ven -->
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <!-- 1/2 ngoi sao -->
-                    <ion-icon name="star-half"></ion-icon>
-                </div>
-                <p>680.000 vnd</p>
+                <button class="btn">Add to cart</button>
             </div>
             <div class="col-4">
                 <img src="kumpoo sakura.webp">
@@ -120,7 +112,10 @@
                     <!-- 1/2 ngoi sao -->
                     <ion-icon name="star-half"></ion-icon>
                 </div>
-                <p>680.000 vnd</p>
+                <div class="product-item-text">
+                    <p><span>680.000</span><sup>vnd</sup></p>
+                </div>
+                <button class="btn">Add to cart</button>
             </div>
             <div class="col-4">
                 <img src="kumpoo sakura.webp">
@@ -134,7 +129,10 @@
                     <!-- 1/2 ngoi sao -->
                     <ion-icon name="star-half"></ion-icon>
                 </div>
-                <p>680.000 vnd</p>
+                <div class="product-item-text">
+                    <p><span>680.000</span><sup>vnd</sup></p>
+                </div>
+                <button class="btn">Add to cart</button>
             </div>
             <div class="col-4">
                 <img src="kumpoo sakura.webp">
@@ -148,7 +146,10 @@
                     <!-- 1/2 ngoi sao -->
                     <ion-icon name="star-half"></ion-icon>
                 </div>
-                <p>680.000 vnd</p>
+                <div class="product-item-text">
+                    <p><span>680.000</span><sup>vnd</sup></p>
+                </div>
+                <button class="btn">Add to cart</button>
             </div>
             <div class="col-4">
                 <img src="kumpoo sakura.webp">
@@ -162,7 +163,10 @@
                     <!-- 1/2 ngoi sao -->
                     <ion-icon name="star-half"></ion-icon>
                 </div>
-                <p>680.000 vnd</p>
+                <div class="product-item-text">
+                    <p><span>680.000</span><sup>vnd</sup></p>
+                </div>
+                <button class="btn">Add to cart</button>
             </div>
             <div class="col-4">
                 <img src="kumpoo sakura.webp">
@@ -176,7 +180,10 @@
                     <!-- 1/2 ngoi sao -->
                     <ion-icon name="star-half"></ion-icon>
                 </div>
-                <p>680.000 vnd</p>
+                <div class="product-item-text">
+                    <p><span>680.000</span><sup>vnd</sup></p>
+                </div>
+                <button class="btn">Add to cart</button>
             </div>
             <div class="col-4">
                 <img src="kumpoo sakura.webp">
@@ -190,7 +197,27 @@
                     <!-- 1/2 ngoi sao -->
                     <ion-icon name="star-half"></ion-icon>
                 </div>
-                <p>680.000 vnd</p>
+                <div class="product-item-text">
+                    <p><span>680.000</span><sup>vnd</sup></p>
+                </div>
+                <button class="btn">Add to cart</button>
+            </div>
+            <div class="col-4">
+                <img src="kumpoo sakura.webp">
+                <h4>Kumpoo Sakura</h4>
+                <div class="rating">
+                    <!-- ngoi sao nguyen ven -->
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <!-- 1/2 ngoi sao -->
+                    <ion-icon name="star-half"></ion-icon>
+                </div>
+                <div class="product-item-text">
+                    <p><span>680.000</span><sup>vnd</sup></p>
+                </div>
+                <button class="btn">Add to cart</button>
             </div>
         </div>
         <h2 class="title">Latest Products</h2>
@@ -207,7 +234,10 @@
                     <!-- 1/2 ngoi sao -->
                     <ion-icon name="star-half"></ion-icon>
                 </div>
-                <p>680.000 vnd</p>
+                <div class="product-item-text">
+                    <p><span>680.000</span><sup>vnd</sup></p>
+                </div>
+                <button class="btn">Add to cart</button>
             </div>
             
             <div class="col-4">
@@ -222,7 +252,8 @@
                     <!-- 1/2 ngoi sao -->
                     <ion-icon name="star-half"></ion-icon>
                 </div>
-                <p>680.000 vnd</p>
+                <p><span>680.000</span><sup>vnd</sup></p>
+                <button class="btn">Add to cart</button>
             </div>
             <div class="col-4">
                 <img src="kumpoo sakura.webp">
@@ -236,7 +267,8 @@
                     <!-- 1/2 ngoi sao -->
                     <ion-icon name="star-half"></ion-icon>
                 </div>
-                <p>680.000 vnd</p>
+                <p><span>680.000</span><sup>vnd</sup></p>
+                <button class="btn">Add to cart</button>
             </div>
             <div class="col-4">
                 <img src="kumpoo sakura.webp">
@@ -250,7 +282,8 @@
                     <!-- 1/2 ngoi sao -->
                     <ion-icon name="star-half"></ion-icon>
                 </div>
-                <p>680.000 vnd</p>
+                <p><span>680.000</span><sup>vnd</sup></p>
+                <button class="btn">Add to cart</button>
             </div>
             <div class="col-4">
                 <img src="kumpoo sakura.webp">
@@ -264,7 +297,8 @@
                     <!-- 1/2 ngoi sao -->
                     <ion-icon name="star-half"></ion-icon>
                 </div>
-                <p>680.000 vnd</p>
+                <p><span>680.000</span><sup>vnd</sup></p>
+                <button class="btn">Add to cart</button>
             </div>
             <div class="col-4">
                 <img src="kumpoo sakura.webp">
@@ -278,7 +312,8 @@
                     <!-- 1/2 ngoi sao -->
                     <ion-icon name="star-half"></ion-icon>
                 </div>
-                <p>680.000 vnd</p>
+                <p><span>680.000</span><sup>vnd</sup></p>
+                <button class="btn">Add to cart</button>
             </div>
             <div class="col-4">
                 <img src="kumpoo sakura.webp">
@@ -292,7 +327,8 @@
                     <!-- 1/2 ngoi sao -->
                     <ion-icon name="star-half"></ion-icon>
                 </div>
-                <p>680.000 vnd</p>
+                <p><span>680.000</span><sup>vnd</sup></p>
+                <button class="btn">Add to cart</button>
             </div>
             <div class="col-4">
                 <img src="kumpoo sakura.webp">
@@ -306,21 +342,8 @@
                     <!-- 1/2 ngoi sao -->
                     <ion-icon name="star-half"></ion-icon>
                 </div>
-                <p>680.000 vnd</p>
-            </div>
-	    <div class="col-4">
-                <img src="kumpoo sakura.webp">
-                <h4>Kumpoo Sakura</h4>
-                <div class="rating">
-                    <!-- ngoi sao nguyen ven -->
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <!-- 1/2 ngoi sao -->
-                    <ion-icon name="star-half"></ion-icon>
-                </div>
-                <p>680.000 vnd</p>
+                <p><span>680.000</span><sup>vnd</sup></p>
+                <button class="btn">Add to cart</button>
             </div>
         </div>
     </div>
