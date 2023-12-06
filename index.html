@@ -18,6 +18,7 @@
 
 </head>
 <body>
+    
     <div class="header">
         <div class="container">
             <header>
@@ -34,10 +35,9 @@
                             <li><a href="">Account</a></li>
                         </ul>
                     </nav>
-                    <div class="cart-icon">
-                        <p style="color:black"> <img src="cart2.png" width="40px" height="40px" style="margin-right:20px;cursor: pointer;"><br><span class="cart-priceT">0</span><sup>$</sup></p>
+                    <div class="cart-icon">  
+                        <p><i class="fas fa-shopping-cart"></i><br><span class="cart-priceT">0</span><sup>$</sup></p>
                     </div>
-                    
                     <img src="menu.png" class="menu-icon" onclick="menutoggle()">
                 </div>
             </header>
@@ -397,14 +397,15 @@
     </section>
 
     <section class="cart">
+        <i class="fas fa-times"></i>
         <h2>Cart</h2>
         <form action="">
             <table>
                 <thead>
-                    <tr>
+                    <tr style="border-bottom: 2px solid black;">
                         <th>Products</th>
                         <th>Price</th>
-                        <th>Quantity</th>
+                        <th>Quantity</th>   
                         <th>Choose</th>
                     </tr>
                 </thead>
@@ -426,6 +427,7 @@
             <div class="price-total" style="float:right;">
                 <p style="font-weight: bold;">Total: <span>0</span><sup>$</sup></p>
             </div>
+            <button>Order</button>
         </form>
     </section>
     <!------------- Offer ------------>
@@ -528,7 +530,7 @@
                 <div class="footer-col-4">
                     <h3>Follow me</h3>
                     <ul>
-                        <li>Facebook</li>
+                        <li><a href="https://www.youtube.com/?app"></a>Facebook</li>
                         <li>Twitter</li>
                         <li>Instagram</li>
                         <li>Gmail</li>
