@@ -13,11 +13,21 @@ btn.forEach(function(button,index){
 });
 function addcart(productImg,productName,productPrice){
     var addtr = document.createElement("tr")
-    var trcontent='<tr><td style="display:flex; align-items: center;"><img src="'+productImg+'" style="width:70px;">'+productName+'</td><td><span>'+productPrice+'</span><sup>$</sup></td><td><input style="width: 30px;outline: none;" type="number" value="1" min="1"></td><td style="cursor: pointer;">Remove</td></tr>'
+
+    var cartItem = document.querySelectorAll("tbody tr")
+    for(var i=0;i<cartItem.length;i++){
+        var productT = document.querySelectorAll(".title")
+        if(productT[i].innerHTML==productName){
+            alert("san pham da co trong gio hang")
+            return
+        }
+    }
+    var trcontent='<tr><td style="display:flex; align-items: center;"><img src="'+productImg+'" style="width:70px;"><span class="title">'+productName+'</span></td><td><span class="prices">'+productPrice+'</span><sup>$</sup></td><td><input style="width: 30px;outline: none;" type="number" value="1" min="1"></td><td style="cursor: pointer;"><span class="cart-delete">Remove</span></td></tr>'
     addtr.innerHTML = trcontent
     var cartTable = document.querySelector("tbody")
     cartTable.append(addtr)
     carttotal()
+    deletecartitem()
 }
 //------------------------------------TotalPrices-----------------------------------
 function carttotal(){
@@ -28,7 +38,7 @@ function carttotal(){
     var total = 0
     for(var i=0;i<cartItem.length;i++){
         var inputValue = cartItem[i].querySelector("input").value
-        var productPrice = cartItem[i].querySelector("span").innerHTML
+        var productPrice = cartItem[i].querySelector(".prices").innerHTML
         totalA =inputValue*productPrice
         
         // total = Math.round(totalx);
@@ -42,17 +52,22 @@ function carttotal(){
     // deletecartitem()
     // inputChange()
 }
-// function deletecartitem(){
-//     var btnItem = document.querySelectorAll(".cart-delete")
-//     for(var i=0;i<btnItem.length;i++){
-//         btnItem[i].addEventListener("click",function(event){
-//             var deleteBtn=event.target
-//             var cartparnet=deleteBtn.parentElement
-//             cartparnet.remove()
-//             carttotal()
-//         })
-//     }
-// }
+//-------------------- Delete cart -----------------------------------
+function deletecartitem(){
+    var cartItem = document.querySelectorAll("tbody tr")
+    // var btnItem = document.querySelectorAll(".cart-delete")
+    for(var i=0;i<cartItem.length;i++){
+        var productT = document.querySelectorAll(".cart-delete")
+        productT[i].addEventListener("click",function(event){
+            var cartDelete = event.target
+            var cartitemR = cartDelete.parentElement.parentElement
+            cartitemR.remove()
+            
+        })
+        
+    }
+}
+
 //-----------------------------------------------------------------------
 // function inputChange(){
 //     var cartItem= document.querySelectorAll("tbody tr")
