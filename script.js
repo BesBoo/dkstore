@@ -22,7 +22,7 @@ function addcart(productImg,productName,productPrice){
             return
         }
     }
-    var trcontent='<tr><td style="display:flex; align-items: center;"><img src="'+productImg+'" style="width:70px;"><span class="title">'+productName+'</span></td><td><span class="prices">'+productPrice+'</span><sup>$</sup></td><td><input style="width: 30px;outline: none;" type="number" value="1" min="1"></td><td style="cursor: pointer;"><span class="cart-delete">Remove</span></td></tr>'
+    var trcontent='<tr><td style="display:flex; align-items: center;"><img src="'+productImg+'" style="width:70px;"><span class="title">'+productName+'</span></td><td><span class="prices">'+productPrice+'</span><sup>$</sup></td><td><input style="width: 30px;outline: none;" type="number" value="1" min="1"></td><td style="cursor: pointer;"><span class="cart-delete" style="padding:10px;boder:none;border-radius:15px;background:white;">Remove</span></td></tr>'
     addtr.innerHTML = trcontent
     var cartTable = document.querySelector("tbody")
     cartTable.append(addtr)
@@ -43,14 +43,16 @@ function carttotal(){
         
         // total = Math.round(totalx);
         total=total+totalA
-        totalB=total.toLocaleString('de-DE')
+        
     }
     var cartTotalA = document.querySelector(".price-total span")
-    cartTotalA.innerHTML=totalB
+    cartTotalA.innerHTML=total.toLocaleString('de-DE')
+    var cartPrice = document.querySelector(".cart-icon span")
+    cartPrice.innerHTML = total.toLocaleString('de-DE')
     // cartTotal.innerHTML = (total*1000).toLocaleString('de-DE')
     // priceT.innerHTML=(total*1000).toLocaleString('de-DE')
     // deletecartitem()
-    // inputChange()
+    inputChange()
 }
 //-------------------- Delete cart -----------------------------------
 function deletecartitem(){
@@ -62,28 +64,28 @@ function deletecartitem(){
             var cartDelete = event.target
             var cartitemR = cartDelete.parentElement.parentElement
             cartitemR.remove()
-            
+            carttotal()
         })
         
     }
 }
 
 //-----------------------------------------------------------------------
-// function inputChange(){
-//     var cartItem= document.querySelectorAll("tbody tr")
-//     for(var i=0;i<cartItem.length;i++){
-//         var inputValue = cartItem[i].querySelector("input")
-//         inputValue.addEventListener("change",function(){
-//             carttotal()
-//         })
-//     }
-// }
+function inputChange(){
+    var cartItem= document.querySelectorAll("tbody tr")
+    for(var i=0;i<cartItem.length;i++){
+        var inputValue = cartItem[i].querySelector("input")
+        inputValue.addEventListener("change",function(){
+            carttotal()
+        })
+    }
+}
 // //-----------------------------------------------------------------------
-// const cartBtn = document.querySelector(".fa-times")
-// const cartshow = document.querySelector(".fa-shopping-cart")
-// cartshow.addEventListener("click",function(){
-//     document.querySelector(".cart").style.right="0"
-// })
-// cartBtn.addEventListener("click",function(){
-//     document.querySelector(".cart").style.right="-100%"
-// })
+const cartBtn = document.querySelector(".fa-times")
+const cartshow = document.querySelector(".fa-shopping-cart")
+cartshow.addEventListener("click",function(){
+    document.querySelector(".cart").style.right="0"
+})
+cartBtn.addEventListener("click",function(){
+    document.querySelector(".cart").style.right="-100%"
+})
