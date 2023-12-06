@@ -101,6 +101,7 @@ nav ul li a:hover{
 .btn:hover{
     background: black;
 }
+
 /* --------------- */
 .header{
     /* mau nen */
@@ -448,7 +449,8 @@ input:focus{
     text-align: left;
 }
 .cart table tr td {
-    border-bottom:1px solid black;
+    /* border-top:2px solid black; */
+    border-bottom:2px solid black;
     padding:12px 0;
 }
 .cart table thead tr th:last-child{
@@ -457,7 +459,58 @@ input:focus{
 .cart table tbody tr td:last-child{
     text-align: right;
 }
-
+/*--------------------------------*/
+.cart button{
+    display: inline-block;
+    background:#ff523b;
+    color:white;
+    padding:8px 30px;
+    margin:30px 0;
+    width:200px;
+    font-size: 20px;
+    border:none;
+    border-radius: 30px;
+    transition: background 0.5s;
+    cursor: pointer;
+}
+.cart button:hover{
+    background: black;
+}
+.cart{
+    position: fixed;
+    height:80vh;
+    width: 800px;
+    right:0;
+    top:0;
+    background: #e4f1fe;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    padding:12px 20px;
+    overflow-y:scroll ;
+    right:-100%;
+    transition: all 0.3s ease;
+}
+.cart i {
+    cursor: pointer;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: start;
+}
+.cart input{
+    width:60px;
+    height:30px;
+    font-size: 14px;
+    padding-left:2px;
+    border:2px solid black;
+}
+input:focus{
+    outline: none;
+}
+.cart-icon i{
+    padding: 10px;
+    cursor: pointer;
+}
 
 
 
