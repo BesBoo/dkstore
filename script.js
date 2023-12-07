@@ -22,7 +22,7 @@ function addcart(productImg,productName,productPrice){
             return
         }
     }
-    var trcontent='<tr><td style="display:flex; align-items: center;"><img src="'+productImg+'" style="width:70px;"><span class="title">'+productName+'</span></td><td><span class="prices">'+productPrice+'</span><sup>$</sup></td><td><input style="width: 30px;outline: none;" type="number" value="1" min="1"></td><td style="cursor: pointer;"><span class="cart-delete" style="padding:10px;boder:none;border-radius:15px;background:white;">Remove</span></td></tr>'
+    var trcontent='<tr><td style="display:flex; align-items: center;"><img src="'+productImg+'" style="width:70px;"><span class="title">'+productName+'</span></td><td><span class="prices">'+productPrice+'</span><sup>$</sup></td><td><input style="width: 30px;outline: none;" type="number" value="1" min="1"></td><td style="cursor: pointer;"><span class="cart-delete" style="padding:10px;boder:none;border-radius:15px;background:#eb2632;color:white;">Remove</span></td></tr>'
     addtr.innerHTML = trcontent
     var cartTable = document.querySelector("tbody")
     cartTable.append(addtr)
