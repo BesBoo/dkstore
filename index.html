@@ -19,385 +19,388 @@
 </head>
 <body>
     
-    <div class="header">
-        <div class="container">
-            <header>
-                <div class="navbar">
-                    <div class="logo">
-                        <img src="mylogo.png" alt="logo" width="150px" height="100px">
+    <div id="home">
+        <div class="header">
+            <div class="container">
+                <header>
+                    <div class="navbar">
+                        <div class="logo">
+                            <img src="mylogo.png" alt="logo" width="150px" height="100px">
+                        </div>
+                        <nav>
+                            <ul id="MenuItems">
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#products">Products</a></li>
+                                <li><a href="#intruction">Instruction</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </nav>
+                        <div class="cart-icon">  
+                            <p><i class="fas fa-shopping-cart"></i><br><span class="cart-priceT">0</span><sup>$</sup></p>
+                        </div>
+                        <img src="menu.png" class="menu-icon" onclick="menutoggle()">
                     </div>
-                    <nav>
-                        <ul id="MenuItems">
-                            <li><a href="">Home</a></li>
-                            <li><a href="">Products</a></li>
-                            <li><a href="">Instruction</a></li>
-                            <li><a href="">Contact</a></li>
-                            <li><a href="">Account</a></li>
-                        </ul>
-                    </nav>
-                    <div class="cart-icon">  
-                        <p><i class="fas fa-shopping-cart"></i><br><span class="cart-priceT">0</span><sup>$</sup></p>
+                </header>
+                
+                <div class="row">
+                    <div class="col-2">
+                        <h1>Give your workout <br> A new style</h1>
+                        <p>Succes isnt always about greatness. 
+                        Its about consistency. Consistent <br> hard work gains success. Greatness will come</p>
+                        <a href="" class="btn">Explore Now &#8594;</a>
                     </div>
-                    <img src="menu.png" class="menu-icon" onclick="menutoggle()">
+                    <div class="col-2">
+                        <img src="7b4a2de8945a5c69473011de9775c02d.png" alt="">
+                    </div>
                 </div>
-            </header>
+            </div>
+        </div>
+        <div class="slider-frame">
+            <div class="slide-images">
+                <div class="img-container">
+                    <img src="slide1.webp" width="100%" height="50%">
+                </div>
+                <div class="img-container">
+                    <img src="slide2.webp" width="100%" height="50%">
+                </div>
+                <div class="img-container">
+                    <img src="slide3.webp" width="100%" height="50%">
+                </div>
+            </div>
+        </div>
+        <!--------- featured categories ---------------->
+        <div class="categories">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-3">
+                        <img src="post1.webp" alt="">
+                    </div>
+                    <div class="col-3">
+                        <img src="post2.webp" alt="">
+                    </div>
+                    <div class="col-3">
+                        <img src="post3.webp" alt="">
+                    </div>
+                </div>
+            </div>
             
-            <div class="row">
-                <div class="col-2">
-                    <h1>Give your workout <br> A new style</h1>
-                    <p>Succes isnt always about greatness. 
-                    Its about consistency. Consistent <br> hard work gains success. Greatness will come</p>
-                    <a href="" class="btn">Explore Now &#8594;</a>
-                </div>
-                <div class="col-2">
-                    <img src="7b4a2de8945a5c69473011de9775c02d.png" alt="">
-                </div>
-            </div>
         </div>
-    </div>
-    <div class="slider-frame">
-        <div class="slide-images">
-            <div class="img-container">
-                <img src="slide1.webp" width="100%" height="50%">
-            </div>
-            <div class="img-container">
-                <img src="slide2.webp" width="100%" height="50%">
-            </div>
-            <div class="img-container">
-                <img src="slide3.webp" width="100%" height="50%">
-            </div>
-        </div>
-    </div>
-    <!--------- featured categories ---------------->
-    <div class="categories">
-        <div class="small-container">
-            <div class="row">
-                <div class="col-3">
-                    <img src="post1.webp" alt="">
-                </div>
-                <div class="col-3">
-                    <img src="post2.webp" alt="">
-                </div>
-                <div class="col-3">
-                    <img src="post3.webp" alt="">
-                </div>
-            </div>
-        </div>
-        
     </div>
     <!--------- featured products ---------------->
-    <section class="small-container">
-        <h2 class="title">Featured Products</h2>
-        <div class="row">
-            <div class="col-4">
-                <img src="kumpoo sakura.webp">
-                <h4>Kumpoo Sakura</h4>
-                <div class="rating">
-                    <!-- ngoi sao nguyen ven -->
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <!-- 1/2 ngoi sao -->
-                    <i class="fa-regular fa-star-half-stroke"></i>
+    <div id="products">
+        <section class="small-container">
+            <h2 class="title">Featured Products</h2>
+            <div class="row">
+                <div class="col-4">
+                    <img src="kumpoo sakura.webp">
+                    <h4>Kumpoo Sakura</h4>
+                    <div class="rating">
+                        <!-- ngoi sao nguyen ven -->
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <!-- 1/2 ngoi sao -->
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </div>
+                    <div class="product-item-text">
+                        <p><span>50</span><sup>$</sup></p>
+                    </div>
+                    <button class="btn">Add to cart</button>
                 </div>
-                <div class="product-item-text">
-                    <p><span>50</span><sup>$</sup></p>
+                <div class="col-4">
+                    <img src="felet arcana 80s.webp">
+                    <h4>Felet Arcana 80S</h4>
+                    <div class="rating">
+                        <!-- ngoi sao nguyen ven -->
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <!-- ngoi sao rong -->
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="product-item-text">
+                        <p><span>55</span><sup>$</sup></p>
+                    </div>
+                    <button class="btn">Add to cart</button>
                 </div>
-                <button class="btn">Add to cart</button>
+                <div class="col-4">
+                    <img src="felet hi tex 200.webp">
+                    <h4>Felet HI-TECH 200</h4>
+                    <div class="rating">
+                        <!-- ngoi sao nguyen ven -->
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="product-item-text">
+                        <p><span>66</span><sup>$</sup></p>
+                    </div>
+                    <button class="btn">Add to cart</button>
+                </div>
+                <div class="col-4">
+                    <img src="felet velton (green).webp">
+                    <h4>Felet Velton (Green)</h4>
+                    <div class="rating">
+                        <!-- ngoi sao nguyen ven -->
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="product-item-text">
+                        <p><span>110</span><sup>$</sup></p>
+                    </div>
+                    <button class="btn">Add to cart</button>
+                </div>
+                <div class="col-4">
+                    <img src="kumpoo pc99 pro.webp" style="height:200px;">
+                    <h4>Kumpoo PC99 Pro</h4>
+                    <div class="rating">
+                        <!-- ngoi sao nguyen ven -->
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="product-item-text">
+                        <p><span>49</span><sup>$</sup></p>
+                    </div>
+                    <button class="btn">Add to cart</button>
+                </div>
+                <div class="col-4">
+                    <img src="lining 3d calibar 001c.webp">
+                    <h4>Lining 3D Calibar 001C</h4>
+                    <div class="rating">
+                        <!-- ngoi sao nguyen ven -->
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="product-item-text">
+                        <p><span>89</span><sup>$</sup></p>
+                    </div>
+                    <button class="btn">Add to cart</button>
+                </div>
+                <div class="col-4">
+                    <img src="lining axforce 60.webp">
+                    <h4>Lining Axforce 60</h4>
+                    <div class="rating">
+                        <!-- ngoi sao nguyen ven -->
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="product-item-text">
+                        <p><span>49</span><sup>$</sup></p>
+                    </div>
+                    <button class="btn">Add to cart</button>
+                </div>
+                <div class="col-4">
+                    <img src="lining axforce 70.webp">
+                    <h4>Lining Axforce 70</h4>
+                    <div class="rating">
+                        <!-- ngoi sao nguyen ven -->
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="product-item-text">
+                        <p><span>55</span><sup>$</sup></p>
+                    </div>
+                    <button class="btn">Add to cart</button>
+                </div>
             </div>
-            <div class="col-4">
-                <img src="felet arcana 80s.webp">
-                <h4>Felet Arcana 80S</h4>
-                <div class="rating">
-                    <!-- ngoi sao nguyen ven -->
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <!-- ngoi sao rong -->
-                    <i class="fa-regular fa-star"></i>
+            <h2 class="title">Latest Products</h2>
+            <div class="row">
+                <div class="col-4">
+                    <img src="lining tectonic 7.webp">
+                    <h4>Lining Tectonic 7</h4>
+                    <div class="rating">
+                        <!-- ngoi sao nguyen ven -->
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="product-item-text">
+                        <p><span>119</span><sup>$</sup></p>
+                    </div>
+                    <button class="btn">Add to cart</button>
                 </div>
-                <div class="product-item-text">
-                    <p><span>55</span><sup>$</sup></p>
+                
+                <div class="col-4">
+                    <img src="lining turbo charging 10b.webp">
+                    <h4>Lining Turbo Charging 10B</h4>
+                    <div class="rating">
+                        <!-- ngoi sao nguyen ven -->
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p><strike>200</strike><sup>$</sup>(-25%) &#8594;<span style="color:red;font-weight: bold;"> 150</span><sup style="color:red;font-weight: bold;">$</sup></p>
+                    <button class="btn">Add to cart</button>
                 </div>
-                <button class="btn">Add to cart</button>
-            </div>
-            <div class="col-4">
-                <img src="felet hi tex 200.webp">
-                <h4>Felet HI-TECH 200</h4>
-                <div class="rating">
-                    <!-- ngoi sao nguyen ven -->
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
+                <div class="col-4">
+                    <img src="kumpoo sakura.webp">
+                    <h4>Kumpoo Sakura</h4>
+                    <div class="rating">
+                        <!-- ngoi sao nguyen ven -->
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p><span>59</span><sup>$</sup></p>
+                    <button class="btn">Add to cart</button>
                 </div>
-                <div class="product-item-text">
-                    <p><span>66</span><sup>$</sup></p>
-                </div>
-                <button class="btn">Add to cart</button>
-            </div>
-            <div class="col-4">
-                <img src="felet velton (green).webp">
-                <h4>Felet Velton (Green)</h4>
-                <div class="rating">
-                    <!-- ngoi sao nguyen ven -->
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-                <div class="product-item-text">
-                    <p><span>110</span><sup>$</sup></p>
-                </div>
-                <button class="btn">Add to cart</button>
-            </div>
-            <div class="col-4">
-                <img src="kumpoo pc99 pro.webp" style="height:200px;">
-                <h4>Kumpoo PC99 Pro</h4>
-                <div class="rating">
-                    <!-- ngoi sao nguyen ven -->
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-                <div class="product-item-text">
+                <div class="col-4">
+                    <img src="kumpoo sakura.webp">
+                    <h4>Kumpoo Sakura</h4>
+                    <div class="rating">
+                        <!-- ngoi sao nguyen ven -->
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
                     <p><span>49</span><sup>$</sup></p>
+                    <button class="btn">Add to cart</button>
                 </div>
-                <button class="btn">Add to cart</button>
-            </div>
-            <div class="col-4">
-                <img src="lining 3d calibar 001c.webp">
-                <h4>Lining 3D Calibar 001C</h4>
-                <div class="rating">
-                    <!-- ngoi sao nguyen ven -->
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
+                <div class="col-4">
+                    <img src="kumpoo sakura.webp">
+                    <h4>Kumpoo Sakura</h4>
+                    <div class="rating">
+                        <!-- ngoi sao nguyen ven -->
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p><span>65</span><sup>$</sup></p>
+                    <button class="btn">Add to cart</button>
                 </div>
-                <div class="product-item-text">
+                <div class="col-4">
+                    <img src="kumpoo sakura.webp">
+                    <h4>Kumpoo Sakura</h4>
+                    <div class="rating">
+                        <!-- ngoi sao nguyen ven -->
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p><span>68</span><sup>$</sup></p>
+                    <button class="btn">Add to cart</button>
+                </div>
+                <div class="col-4">
+                    <img src="kumpoo sakura.webp">
+                    <h4>Kumpoo Sakura</h4>
+                    <div class="rating">
+                        <!-- ngoi sao nguyen ven -->
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p><span>70</span><sup>$</sup></p>
+                    <button class="btn">Add to cart</button>
+                </div>
+                <div class="col-4">
+                    <img src="kumpoo sakura.webp">
+                    <h4>Kumpoo Sakura</h4>
+                    <div class="rating">
+                        <!-- ngoi sao nguyen ven -->
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p><span>40</span><sup>$</sup></p>
+                    <button class="btn">Add to cart</button>
+                </div>
+                <div class="col-4">
+                    <img src="lining axforce 90 xanh dragon max.webp">
+                    <h4>Lining Axforce 90 Dragon Blue MAX</h4>
+                    <div class="rating">
+                        <!-- ngoi sao nguyen ven -->
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p><span>150</span><sup>$</sup></p>
+                    <button class="btn">Add to cart</button>
+                </div>
+                <div class="col-4">
+                    <img src="lining axforce bigbang white.webp">
+                    <h4>Lining Axforce BigBang (White)</h4>
+                    <div class="rating">
+                        <!-- ngoi sao nguyen ven -->
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p><span>120</span><sup>$</sup></p>
+                    <button class="btn">Add to cart</button>
+                </div>
+                <div class="col-4">
+                    <img src="lining halbertec.webp" height="230px">
+                    <h4>Lining Halbertec</h4>
+                    <div class="rating">
+                        <!-- ngoi sao nguyen ven -->
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
                     <p><span>89</span><sup>$</sup></p>
+                    <button class="btn">Add to cart</button>
                 </div>
-                <button class="btn">Add to cart</button>
+                <div class="col-4">
+                    <img src="lining tectonic 1.webp" height="230px">
+                    <h4>Lining Tectonic 1</h4>
+                    <div class="rating">
+                        <!-- ngoi sao nguyen ven -->
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p><span>99</span><sup>$</sup></p>
+                    <button class="btn">Add to cart</button>
+                </div>
             </div>
-            <div class="col-4">
-                <img src="lining axforce 60.webp">
-                <h4>Lining Axforce 60</h4>
-                <div class="rating">
-                    <!-- ngoi sao nguyen ven -->
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-                <div class="product-item-text">
-                    <p><span>49</span><sup>$</sup></p>
-                </div>
-                <button class="btn">Add to cart</button>
-            </div>
-            <div class="col-4">
-                <img src="lining axforce 70.webp">
-                <h4>Lining Axforce 70</h4>
-                <div class="rating">
-                    <!-- ngoi sao nguyen ven -->
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-                <div class="product-item-text">
-                    <p><span>55</span><sup>$</sup></p>
-                </div>
-                <button class="btn">Add to cart</button>
-            </div>
-        </div>
-        <h2 class="title">Latest Products</h2>
-        <div class="row">
-            <div class="col-4">
-                <img src="lining tectonic 7.webp">
-                <h4>Lining Tectonic 7</h4>
-                <div class="rating">
-                    <!-- ngoi sao nguyen ven -->
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-                <div class="product-item-text">
-                    <p><span>119</span><sup>$</sup></p>
-                </div>
-                <button class="btn">Add to cart</button>
-            </div>
-            
-            <div class="col-4">
-                <img src="lining turbo charging 10b.webp">
-                <h4>Lining Turbo Charging 10B</h4>
-                <div class="rating">
-                    <!-- ngoi sao nguyen ven -->
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-                <p><strike>200</strike><sup>$</sup>(-25%) &#8594;<span style="color:red;font-weight: bold;"> 150</span><sup style="color:red;font-weight: bold;">$</sup></p>
-                <button class="btn">Add to cart</button>
-            </div>
-            <div class="col-4">
-                <img src="kumpoo sakura.webp">
-                <h4>Kumpoo Sakura</h4>
-                <div class="rating">
-                    <!-- ngoi sao nguyen ven -->
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-                <p><span>680.000</span><sup>vnd</sup></p>
-                <button class="btn">Add to cart</button>
-            </div>
-            <div class="col-4">
-                <img src="kumpoo sakura.webp">
-                <h4>Kumpoo Sakura</h4>
-                <div class="rating">
-                    <!-- ngoi sao nguyen ven -->
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-                <p><span>680.000</span><sup>vnd</sup></p>
-                <button class="btn">Add to cart</button>
-            </div>
-            <div class="col-4">
-                <img src="kumpoo sakura.webp">
-                <h4>Kumpoo Sakura</h4>
-                <div class="rating">
-                    <!-- ngoi sao nguyen ven -->
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-                <p><span>680.000</span><sup>vnd</sup></p>
-                <button class="btn">Add to cart</button>
-            </div>
-            <div class="col-4">
-                <img src="kumpoo sakura.webp">
-                <h4>Kumpoo Sakura</h4>
-                <div class="rating">
-                    <!-- ngoi sao nguyen ven -->
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-                <p><span>680.000</span><sup>vnd</sup></p>
-                <button class="btn">Add to cart</button>
-            </div>
-            <div class="col-4">
-                <img src="kumpoo sakura.webp">
-                <h4>Kumpoo Sakura</h4>
-                <div class="rating">
-                    <!-- ngoi sao nguyen ven -->
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-                <p><span>680.000</span><sup>vnd</sup></p>
-                <button class="btn">Add to cart</button>
-            </div>
-            <div class="col-4">
-                <img src="kumpoo sakura.webp">
-                <h4>Kumpoo Sakura</h4>
-                <div class="rating">
-                    <!-- ngoi sao nguyen ven -->
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-                <p><span>680.000</span><sup>vnd</sup></p>
-                <button class="btn">Add to cart</button>
-            </div>
-            <div class="col-4">
-                <img src="lining axforce 90 xanh dragon max.webp">
-                <h4>Lining Axforce 90 Dragon Blue MAX</h4>
-                <div class="rating">
-                    <!-- ngoi sao nguyen ven -->
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-                <p><span>150</span><sup>$</sup></p>
-                <button class="btn">Add to cart</button>
-            </div>
-            <div class="col-4">
-                <img src="lining axforce bigbang white.webp">
-                <h4>Lining Axforce BigBang (White)</h4>
-                <div class="rating">
-                    <!-- ngoi sao nguyen ven -->
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-                <p><span>120</span><sup>$</sup></p>
-                <button class="btn">Add to cart</button>
-            </div>
-            <div class="col-4">
-                <img src="lining halbertec.webp" height="230px">
-                <h4>Lining Halbertec</h4>
-                <div class="rating">
-                    <!-- ngoi sao nguyen ven -->
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-                <p><span>89</span><sup>$</sup></p>
-                <button class="btn">Add to cart</button>
-            </div>
-            <div class="col-4">
-                <img src="lining tectonic 1.webp" height="230px">
-                <h4>Lining Tectonic 1</h4>
-                <div class="rating">
-                    <!-- ngoi sao nguyen ven -->
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-                <p><span>99</span><sup>$</sup></p>
-                <button class="btn">Add to cart</button>
-            </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
     <section class="cart">
-        <i class="fas fa-times"></i>
+        <i class="fas fa-times" style="font-size:25px;"></i>
         <h2>Cart</h2>
         <form action="">
             <table>
@@ -459,11 +462,11 @@
                     <p>Lorem Ipsum is simply dummy text of the printing</p>
                     <div class="rating">
                         <!-- ngoi sao nguyen ven -->
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
                     </div>
                     <img src="" alt="Anh Lindan">
                     <h3>Lindan</h3>
@@ -472,11 +475,11 @@
                     <p>Lorem Ipsum is simply dummy text of the printing</p>
                     <div class="rating">
                         <!-- ngoi sao nguyen ven -->
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
                     </div>
                     <img src="" alt="Anh Lindan">
                     <h3>Lindan</h3>
@@ -485,11 +488,12 @@
                     <p>Lorem Ipsum is simply dummy text of the printing</p>
                     <div class="rating">
                         <!-- ngoi sao nguyen ven -->
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
+                        
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
                     </div>
                     <img src="" alt="Anh Lindan">
                     <h3>Lindan</h3>
@@ -518,27 +522,44 @@
     </div>
 
     <!----------------- Footer ----------------->
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="footer-col-2">
-                    <img src="mylogo.png" alt="Logo" width="140px" height="100px">
-                    <p>Our purpose is to sustainably make the please and
-                        benefits of sports accessible to the many
-                    </p>
+    <div id="contact">
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-2">
+                        <img src="mylogo.png" alt="Logo" width="140px" height="100px">
+                        <p>Our purpose is to sustainably make the please and
+                            benefits of sports accessible to the many
+                        </p>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3 style="padding-right:50px;">Follow me</h3>
+                        <div class="wrapper">
+                            <div class="button">
+                                <div class="icons">
+                                    <a href="https://www.facebook.com/tranduc.2607?mibextid=vk8aRt" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                                    
+                                </div>
+                                <div class="icons">
+                                    <i class="fa-brands fa-twitter"></i>
+                                    
+                                </div>
+                                <div class="icons">
+                                    <a href="https://instagram.com/td.l3o_04?igsshid=OGQ5ZDc2ODk2ZA==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                                    
+                                </div>
+                                <div class="icons">
+                                    <a href="mailto:tranduyduc9679@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <h3 style="padding-right:50px;padding-top:10px;">Contact: 0375599***</h3>
+                    </div>
                 </div>
-                <div class="footer-col-4">
-                    <h3>Follow me</h3>
-                    <ul>
-                        <li><a href="https://www.youtube.com/?app"></a>Facebook</li>
-                        <li>Twitter</li>
-                        <li>Instagram</li>
-                        <li>Gmail</li>
-                    </ul>
-                </div>
+                <hr>
+                <p class="copyright">@Designed by GDuccky</p>
             </div>
-            <hr>
-            <p class="copyright">Copyright 2023 - Easy Tutorials</p>
         </div>
     </div>
     <!-- js for toggle menu -->
