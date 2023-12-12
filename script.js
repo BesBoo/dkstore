@@ -89,3 +89,4 @@ cartshow.addEventListener("click",function(){
 cartBtn.addEventListener("click",function(){
     document.querySelector(".cart").style.right="-100%"
 })
+
