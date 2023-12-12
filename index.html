@@ -91,11 +91,11 @@
 		<h2 class="title">Featured Products</h2>
 		<div class="row row-2">
 		
-		<select>
-			<option>Default Shorting</option>
-			<option>Short by price</option>
-			<option>Short by popularity</option>
-			<option>Short by rating</option>
+		<select id="sorting">
+			<option value="default">Default Shorting</option>
+			<option value="lowToHigh">Short by price</option>
+			<option value="alphabetical">Short by A-Z</option>
+			<option value="highToLow">Short by price low</option>
 			<option>Short by sale</option>
 		</select>
 	    </div>
@@ -313,8 +313,8 @@
 					<button class="btn">Add to cart</button>
 			</div>
 			<div class="col-4">
-					<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/vot-cau-long-vs-razor-noi-dia-trung_1700427183.webp" style="heigth:230px;">
-					<h4>VS Razor (Noi dia Trung</h4>
+					<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/vot-cau-long-vs-razor-noi-dia-trung_1700427183.webp" style="height:230px;">
+					<h4>VS Razor (Noi dia Trung)</h4>
 					<div class="rating">
 							<!-- ngoi sao nguyen ven -->
 							<i class="fa-solid fa-star"></i>
@@ -329,7 +329,7 @@
 					<button class="btn">Add to cart</button>
 			</div>
 			<div class="col-4">
-					<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/vot-cau-long-victor-bs12-se-55th-ma-jp_1700094096.webp" style="heigth:230px;">
+					<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/vot-cau-long-victor-bs12-se-55th-ma-jp_1700094096.webp" style="height:230px;">
 					<h4>Victor BS12 SE 55th</h4>
 					<div class="rating">
 							<!-- ngoi sao nguyen ven -->
@@ -348,7 +348,7 @@
 	<h2 class="title">Popular Products</h2>
 	<div class="row">
 			<div class="col-4">
-					<img src="lining tectonic 7.webp" style="heigth:230px;">
+					<img src="lining tectonic 7.webp" style="height:230px;">
 					<h4>Lining Tectonic 7</h4>
 					<div class="rating">
 							<!-- ngoi sao nguyen ven -->
@@ -365,7 +365,7 @@
 			</div>
 
 			<div class="col-4">
-					<img src="lining turbo charging 10b.webp" style="heigth:230px;">
+					<img src="lining turbo charging 10b.webp" style="height:230px;">
 					<h4>Lining Turbo Charging 10B</h4>
 					<div class="rating">
 							<!-- ngoi sao nguyen ven -->
@@ -393,7 +393,7 @@
 					<button class="btn">Add to cart</button>
 			</div>
 			<div class="col-4">
-					<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/vot-cau-long-felet-woven-888-chinh-hang_1701804869.webp" style="heigth:230px;">
+					<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/vot-cau-long-felet-woven-888-chinh-hang_1701804869.webp" style="height:230px;">
 					<h4>Felet-Woven 888</h4>
 					<div class="rating">
 							<!-- ngoi sao nguyen ven -->
@@ -407,7 +407,7 @@
 					<button class="btn">Add to cart</button>
 			</div>
 			<div class="col-4">
-					<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/vot-cau-long-felet-woven-999-chinh-hang_1701805283.webp" style="heigth:230px;">
+					<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/vot-cau-long-felet-woven-999-chinh-hang_1701805283.webp" style="height:230px;">
 					<h4>Felet-Woven 999</h4>
 					<div class="rating">
 							<!-- ngoi sao nguyen ven -->
@@ -421,7 +421,7 @@
 					<button class="btn">Add to cart</button>
 			</div>
 			<div class="col-4">
-					<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/vot-cau-long-vs-challenger-720-xach-tay_1701375403.webp" style="heigth:230px;">
+					<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/vot-cau-long-vs-challenger-720-xach-tay_1701375403.webp" style="height:230px;">
 					<h4>VS Challenger 720</h4>
 					<div class="rating">
 							<!-- ngoi sao nguyen ven -->
@@ -435,7 +435,7 @@
 					<button class="btn">Add to cart</button>
 			</div>
 			<div class="col-4">
-					<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/set-vot-cau-long-kumpoo-k520s-hong-noi-dia-trung_1701735612.webp" style="heigth:230px;">
+					<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/set-vot-cau-long-kumpoo-k520s-hong-noi-dia-trung_1701735612.webp" style="height:230px;">
 					<h4>Kumpoo K520S-Pink</h4>
 					<div class="rating">
 							<!-- ngoi sao nguyen ven -->
@@ -449,7 +449,7 @@
 					<button class="btn">Add to cart</button>
 			</div>
 			<div class="col-4">
-					<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/vot-cau-long-mizuno-altius-01-feels-ma-jp-8_1701374815.webp" style="heigth:230px;">
+					<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/vot-cau-long-mizuno-altius-01-feels-ma-jp-8_1701374815.webp" style="height:230px;">
 					<h4>Mizuno Altius 01 Feels</h4>
 					<div class="rating">
 							<!-- ngoi sao nguyen ven -->
@@ -466,7 +466,7 @@
 					<button class="btn">Add to cart</button>
 			</div>
 			<div class="col-4">
-					<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/vot-cau-long-vs-challenger-750-xach-tay_1700856680.webp" style="heigth:230px;">
+					<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/vot-cau-long-vs-challenger-750-xach-tay_1700856680.webp" style="height:230px;">
 					<h4>VS Challenger 750</h4>
 					<div class="rating">
 							<!-- ngoi sao nguyen ven -->
@@ -494,7 +494,7 @@
 					<button class="btn">Add to cart</button>
 			</div>
 			<div class="col-4">
-					<img src="lining axforce bigbang white.webp" style="heigth:230px;">
+					<img src="lining axforce bigbang white.webp" style="height:230px;">
 					<h4>Lining Axforce BigBang (White)</h4>
 					<div class="rating">
 							<!-- ngoi sao nguyen ven -->
@@ -508,7 +508,7 @@
 					<button class="btn">Add to cart</button>
 			</div>
 			<div class="col-4">
-					<img src="lining halbertec.webp" style="heigth:230px;">
+					<img src="lining halbertec.webp" style="height:230px;">
 					<h4>Lining Halbertec</h4>
 					<div class="rating">
 							<!-- ngoi sao nguyen ven -->
@@ -522,7 +522,7 @@
 					<button class="btn">Add to cart</button>
 			</div>
 			<div class="col-4">
-					<img src="lining tectonic 1.webp" style="heigth:230px;">
+					<img src="lining tectonic 1.webp" style="height:230px;">
 					<h4>Lining Tectonic 1</h4>
 					<div class="rating">
 							<!-- ngoi sao nguyen ven -->
@@ -564,7 +564,7 @@
 					<button class="btn">Add to cart</button>
 			</div>
 			<div class="col-4">
-					<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/vot-cau-long-yonex-nanoflare-800-game-chinh-hang_1698803663.webp" style="heigth:230px;">
+					<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/vot-cau-long-yonex-nanoflare-800-game-chinh-hang_1698803663.webp" style="height:230px;">
 					<h4>Yonex Nanoflare 800 Game</h4>
 					<div class="rating">
 							<!-- ngoi sao nguyen ven -->
@@ -592,7 +592,7 @@
 					<button class="btn">Add to cart</button>
 			</div>
 			<div class="col-4">
-					<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/vot-cau-long-victor-ars-77f-noi-dia-trung_1698718403.webp" style="heigth:230px;">
+					<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/vot-cau-long-victor-ars-77f-noi-dia-trung_1698718403.webp" style="height:230px;">
 					<h4>Victor ARS-77F</h4>
 					<div class="rating">
 							<!-- ngoi sao nguyen ven -->
@@ -620,7 +620,7 @@
 					<button class="btn">Add to cart</button>
 			</div>
 			<div class="col-4">
-					<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/vot-cau-long-apacs-z-power-900-rp-chinh-hang_1698628933.webp" style="heigth:230px;">
+					<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/vot-cau-long-apacs-z-power-900-rp-chinh-hang_1698628933.webp" style="height:230px;">
 					<h4>Apacs Z-Power 900RP</h4>
 					<div class="rating">
 							<!-- ngoi sao nguyen ven -->
@@ -662,7 +662,7 @@
 					<button class="btn">Add to cart</button>
 			</div>
 			<div class="col-4">
-					<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/vot-cau-long-lining-windstorm-72-blue-chinh-hang.webp" style="heigth:230px;">
+					<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/vot-cau-long-lining-windstorm-72-blue-chinh-hang.webp" style="height:210px;">
 					<h4>Lining Windstorm-72-Blue</h4>
 					<div class="rating">
 							<!-- ngoi sao nguyen ven -->
@@ -690,7 +690,7 @@
 					<button class="btn">Add to cart</button>
 			</div>
 			<div class="col-4">
-					<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/set-vot-cau-long-kamito-tm-legend-2023-chinh-hang_1696819201.webp" style="heigth:230px;">
+					<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/set-vot-cau-long-kamito-tm-legend-2023-chinh-hang_1696819201.webp" style="height:210px;">
 					<h4>Set Kamito-TM-Legend 2023</h4>
 					<div class="rating">
 							<!-- ngoi sao nguyen ven -->
@@ -705,9 +705,9 @@
 			</div>
 		</div>
 		<div class="page-btn">
-			<span><a href="index.html">1</a></span>
+			<span><a href="#">1</a></span>
 			<span><a href="index2.html">2</a></span>
-			<span><a href="index3.html">3</a></span>
+			<span><a href="index3.html" >3</a></span>
 			<span><a href="index4.html">4</a></span>
 			<span><a href="#">&#8594;</a></span>
 		</div>
