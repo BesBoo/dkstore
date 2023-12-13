@@ -23,7 +23,8 @@ html{
 	display:flex;
 	align-items: center;
 	padding:10px;
-	background: #2d4059;
+/* 	background: #2d4059; */
+	background:black;
 	border-bottom-left-radius: 20px;
 	border-bottom-right-radius: 20px;
 	opacity: 1;
