@@ -676,6 +676,10 @@ input:focus{
   background:black;
   color:white;
 }
+.payment-content-left-method-item-img{
+  padding:10px;
+  margin-bottom:10px;
+}
 
 
 
