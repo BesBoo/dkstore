@@ -626,7 +626,7 @@ input:focus{
   padding-left:12px;
 }
 .payment-content-left p,label{
-  font-size:12px;
+  font-size:14px;
   font-family:var(--main-text-font);
 }
 .payment-content-right-button{
