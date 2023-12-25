@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>DK Store | Badminton</title>
+	<link rel="icon" type="image/x-icon"href="icoin-ao-cau-long-thiet-ke.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href=
+	"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+	</link>
+	<style>
+		*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+:root{
+  --text-color:rgb(110,110,110);
+}
+body{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height:100vh;
+  background-color:white;
+}
+.container{
+  width:350px;
+  background:#ddd;
+  padding:30px;
+  position:relative;
+  border-radius:20px;
+}
+h6{
+  font-size:20px;
+  color:black;
+}
+
+h1{
+  padding:30px 0px;
+  font-size:40px;
+  color:black;
+}
+form label{
+  color:black;
+  text-transform:uppercase;
+  position:relative;
+  font-size:13px;
+  word-spacing:4px;
+}
+form select{
+  width:100%;
+  outline:none;
+  border:none;
+  border-bottom:1px solid black;
+  text-transform:capitalize;
+  padding-top:3px;
+  color:black;
+  padding-bottom:3px;
+  font-size:18px;
+  margin-left:-3px;
+  background-color:transparent;
+}
+form #cardno{
+  width:100%;
+  outline:none;
+  border:none;
+  border-bottom:1px solid black;
+  padding-top:5px;
+  margin-bottom:20px;
+  padding-right:30px;
+  color:black;
+  font-size:18px;
+  background-color:transparent;
+  padding-bottom:5px;
+}
+.float{
+  display:flex;
+}
+#validtill, #cvv{
+  border:none;
+  border-bottom:1px solid black;
+  outline:none;
+  width:130px;
+  padding-top:14px;
+  margin-bottom:56px;
+  color:black;
+  background-color:transparent;
+  font-size:18px;
+}
+p{
+  margin:-20px 0px 56px 25px;
+  font-size:18px;
+  text-transform:none;
+}
+button{
+  border:none;
+  outline:none;
+  text-align:center;
+  width:100%;
+  height:40px;
+  background:black;
+  color:white;
+  border-radius:20px;
+  padding:10px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+	</style>
+</head>
+
+<body>
+
+ <div class="container">
+    <h6>Check out</h6>
+    <h1>Payment</h1>
+    <form action="">
+      <label for="">
+        <select name="country" id="country">
+          <option value="Vietnam">Vietnam</option>
+          <option value="USA">USA</option>
+          <option value="England">England</option>
+        </select>
+      </label>
+      <label for="cardno">Card Number
+        <input type="text" name="cardno" id="cardno" maxlength="19" onkeypress="cardspace()"/>
+      </label>
+      <div class="float">
+        <label for="validtill">Valid till
+          <input type="text" name="validtill" id="validtill" maxlength="7" onkeypress="addSlashes()"/>
+        </label>
+        <label for="cvv">CVV
+          <input type="text" name="cvv" maxlength="3" id="cvv"/>
+        </label></div>
+        <label for="checkbox">
+          <input type="checkbox" name="checkbox" id="checkbox"/>
+          <p>Payment Address is the same as the Delivery Address</p>
+        </label>
+        <button>Pay 199$</button>
+      
+    </form>
+  </div>
+
+<!----------------- Footer ----------------->
+<div id="contact">
+	<div class="footer">
+			<div class="container">
+					<div class="row">
+							<div class="footer-col-2">
+									<img src="mylogo.png" alt="Logo" width="140px" height="100px">
+									<p>Our purpose is to sustainably make the please and
+											benefits of sports accessible to the many
+									</p>
+							</div>
+							<div class="footer-col-4">
+									<h3 style="padding-right:50px;">Follow me</h3>
+									<div class="wrapper">
+											<div class="button">
+													<div class="icons">
+															<a href="https://www.facebook.com/tranduc.2607?mibextid=vk8aRt" target="_blank"><i class="fa-brands fa-facebook" style="color:black;"></i></a>
+
+													</div>
+													<div class="icons">
+															<i class="fa-brands fa-twitter" style="color:black;"></i>
+
+													</div>
+													<div class="icons">
+															<a href="https://instagram.com/td.l3o_04?igsshid=OGQ5ZDc2ODk2ZA==" target="_blank"><i class="fa-brands fa-instagram" style="color:black;"></i></a>
+
+													</div>
+													<div class="icons">
+															<a href="mailto:tranduyduc9679@gmail.com" target="_blank"><i class="fa-regular fa-envelope" style="color:black;"></i></a>
+
+													</div>
+											</div>
+									</div>
+									<h3 style="padding-right:50px;padding-top:10px;">Contact: 0375599***</h3>
+							</div>
+					</div>
+					<hr>
+					<p class="copyright">@Designed by GDuccky</p>
+			</div>
+	</div>
+</div>
+<!-- js for toggle menu -->
+<script>
+	var MenuItems=document.getElementById("MenuItems");
+	MenuItems.style.maxHeight="0px";
+	function menutoggle(){
+			if(MenuItems.style.maxHeight="0px")
+					{
+							MenuItems.style.maxHeight="200px";
+					}
+			else
+					{
+							MenuItems.style.maxHeight="0px";
+					}
+	}
+</script>
+
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<script>
+	$(document).ready(function(){
+			$(window).scroll(function(){
+					if($(this).scrollTop()){
+							$('header').addClass('sticky');
+					}else{
+							$('header').addClass('sticky');
+					}
+			})
+	})
+</script>
+<script src="script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
