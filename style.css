@@ -614,19 +614,19 @@ input:focus{
 .payment-top-payment{
   border:1px solid blue;
 }
-.payment-top-payment i{
-  color:blue;
-}
+
 .payment-content-left{
   width:50%;
 }
 .payment-content-right{
   width:50%;
   border-left:2px solid black;
-  padding-left:12px;
+  padding-left:15px;
 }
 .payment-content-left p,label{
-  font-size:18px;
+  font-size:20px;
+  padding:5px;
+  margin-bottom:5px;
   font-family:var(--main-text-font);
 }
 .payment-content-right-button{
@@ -678,8 +678,19 @@ input:focus{
   padding:10px;
   margin-bottom:10px;
 }
-
-
+.payment-content-left-method-delivery-item button{
+  outline:none;
+  margin-top:30px;
+  text-align:center;
+  align-items:center;
+  display:flex;
+  cursor:pointer;
+  width:300px;
+}
+.payment-content-left-method-delivery-item button:hover{
+  color:white;
+  background:#ab3065;
+}
 .payment-content-left-method-payment-item {
   position: relative;
 }
@@ -701,5 +712,7 @@ input:focus{
   visibility: visible;
   opacity: 1; 
 }
+
+
 
 
