@@ -685,7 +685,7 @@ input:focus{
   align-items:center;
   display:flex;
   cursor:pointer;
-  width:300px;
+  width:350px;
 }
 .payment-content-left-method-delivery-item button:hover{
   color:white;
