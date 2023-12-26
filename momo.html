@@ -14,25 +14,22 @@
 	<link rel="stylesheet" href=
 	"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
 	</link>
-	<style>
-		*{
+  <style>
+    *{
   margin:0;
   padding:0;
   box-sizing:border-box;
-}
-:root{
-  --text-color:rgb(110,110,110);
 }
 body{
   display:flex;
   align-items:center;
   justify-content:center;
-  min-height:100vh;
-  background-color:white;
+  min-height:150vh;
+  background-color:#ddd;
 }
 .container{
-  width:350px;
-  background:#ddd;
+  width:500px;
+  background:#fff;
   padding:30px;
   position:relative;
   border-radius:20px;
@@ -43,7 +40,7 @@ h6{
 }
 
 h1{
-  padding:30px 0px;
+  padding-bottom:10px;
   font-size:40px;
   color:black;
 }
@@ -51,7 +48,7 @@ form label{
   color:black;
   text-transform:uppercase;
   position:relative;
-  font-size:13px;
+  font-size:15px;
   word-spacing:4px;
 }
 form select{
@@ -73,21 +70,18 @@ form #cardno{
   border:none;
   border-bottom:1px solid black;
   padding-top:5px;
-  margin-bottom:20px;
+  margin-bottom:2px;
   padding-right:30px;
   color:black;
   font-size:18px;
   background-color:transparent;
   padding-bottom:5px;
 }
-.float{
-  display:flex;
-}
 #validtill, #cvv{
   border:none;
   border-bottom:1px solid black;
   outline:none;
-  width:130px;
+  width:100%;
   padding-top:14px;
   margin-bottom:56px;
   color:black;
@@ -95,8 +89,10 @@ form #cardno{
   font-size:18px;
 }
 p{
-  margin:-20px 0px 56px 25px;
-  font-size:18px;
+  margin:8px 0;
+  padding:1px;
+  border-bottom:1px solid black;
+  font-size:22px;
   text-transform:none;
 }
 button{
@@ -109,41 +105,44 @@ button{
   color:white;
   border-radius:20px;
   padding:10px;
+  margin-top:20px;
   font-weight:bold;
   cursor:pointer;
 }
+h7{
+  font-size:15px;
+  font-weight:bold;
+}
+h6{
+  font-size:30px;
+}
 
-	</style>
+  </style>
 </head>
 
 <body>
 
  <div class="container">
-    <h6>Check out</h6>
+    <img src="https://images.careerbuilder.vn/employer_folders/lot9/221789/95340imgpsh_fullsize.jpg" style="width:260px;height:120px;margin-left:-30px;">
     <h1>Payment</h1>
+   <img src="qrmomo.jpg" style="width:220px;height:220px; margin-top:-200px;float:right;">
     <form action="">
-      <label for="">
-        <select name="country" id="country">
-          <option value="Vietnam">Vietnam</option>
-          <option value="USA">USA</option>
-          <option value="England">England</option>
-        </select>
-      </label>
       <label for="cardno">Card Number
-        <input type="text" name="cardno" id="cardno" maxlength="19" onkeypress="cardspace()"/>
+        <p>0375599679</p>
       </label>
       <div class="float">
-        <label for="validtill">Valid till
-          <input type="text" name="validtill" id="validtill" maxlength="7" onkeypress="addSlashes()"/>
+        <label for="validtill">Chu tai khoan
+          <p>Tran Duy Duc</p>
         </label>
-        <label for="cvv">CVV
-          <input type="text" name="cvv" maxlength="3" id="cvv"/>
+        <label for="cvv">Noi dung
+          <p style="margin-bottom:20px;">Ten + sdt nhan hang</p>
         </label></div>
         <label for="checkbox">
           <input type="checkbox" name="checkbox" id="checkbox"/>
-          <p>Payment Address is the same as the Delivery Address</p>
+          <h7>Payment Address is the same as the Delivery Address</h7>
         </label>
-        <button>Pay 199$</button>
+        <button><h3 style="font-weight: bold;">Total: <span>0</span><sup>$</sup></h3>
+</button>
       
     </form>
   </div>
