@@ -5,7 +5,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>DK Store | Badminton</title>
 	<link rel="icon" type="image/x-icon"href="icoin-ao-cau-long-thiet-ke.png">
-	<link rel="stylesheet" href="style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
@@ -15,148 +14,142 @@
 	<link rel="stylesheet" href=
 	"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
 	</link>
+  <style>
+    *{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+body{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height:200vh;
+  background-color:#ddd;
+}
+.container{
+  width:500px;
+  background:#fff;
+  padding:30px;
+  position:relative;
+  border-radius:20px;
+}
+h6{
+  font-size:20px;
+  color:black;
+}
+
+h1{
+  padding-bottom:10px;
+  font-size:40px;
+  color:black;
+}
+form label{
+  color:black;
+  text-transform:uppercase;
+  position:relative;
+  font-size:15px;
+  word-spacing:4px;
+}
+form select{
+  width:100%;
+  outline:none;
+  border:none;
+  border-bottom:1px solid black;
+  text-transform:capitalize;
+  padding-top:3px;
+  color:black;
+  padding-bottom:3px;
+  font-size:18px;
+  margin-left:-3px;
+  background-color:transparent;
+}
+form #cardno{
+  width:100%;
+  outline:none;
+  border:none;
+  border-bottom:1px solid black;
+  padding-top:5px;
+  margin-bottom:2px;
+  padding-right:30px;
+  color:black;
+  font-size:18px;
+  background-color:transparent;
+  padding-bottom:5px;
+}
+#validtill, #cvv{
+  border:none;
+  border-bottom:1px solid black;
+  outline:none;
+  width:100%;
+  padding-top:14px;
+  margin-bottom:56px;
+  color:black;
+  background-color:transparent;
+  font-size:18px;
+}
+p{
+  margin:8px 0;
+  padding:1px;
+  border-bottom:1px solid black;
+  font-size:22px;
+  text-transform:none;
+}
+button{
+  border:none;
+  outline:none;
+  text-align:center;
+  width:100%;
+  height:40px;
+  background:black;
+  color:white;
+  border-radius:20px;
+  padding:10px;
+  margin-top:20px;
+  font-weight:bold;
+  cursor:pointer;
+}
+h7{
+  font-size:15px;
+  font-weight:bold;
+}
+h6{
+  font-size:30px;
+}
+
+  </style>
 </head>
+
 <body>
-  <section class="payment">
 
-    <div class="container">
-      <div class="payment-content row">
-        <div class="payment-content-left">
-          <div class="payment-content-left-method-delivery">
-            <p style="font-weight:bold;font-size:22px;">Delivery Method</p>
-            <div class="payment-content-left-method-delivery-item">
-            <input checked  type="radio">
-            <label for="">Express Delivery</label>
-            </div>
-          </div>
-          <div class="payment-content-left-method-payment">
-            <p style="font-weight:bold;font-size:22px;">Payment Method</p>
-            <p style="margin-bottom:8px;">All transaction information is secure and encrypted.<br> Credit information will never be saved.</p>
-            
-            <div class="payment-content-left-method-payment-item">
-              <input name="method-payment" type="radio">
-              <label for="">Paying through bank</label>
-            </div>
-            <div class="payment-content-left-method-payment-item-img">
-              
-              <img src="data:image/png;base64,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" style="width:120px;height:90px;">
-<!--               <p style="margin-left:30px;">Ngan hang ACB CN Gia Kiem <br>Stk: 28874407 <br>Chu tk: Tran Duy Duc <br>Noi dung ck: Ten + sdt dat hang</p> -->
-            </div>
-            <div class="payment-content-left-method-delivery-item">
-            <input name="method-payment" type="radio">
-            <label for="">Payment on delivery <i class="fas fa-money-check-alt"></i></label>
-            </div>
-            <br>
-            <div class="payment-content-left-method-payment-item">
-              
-              <label for="">Pay with MoMo</label>
-              <a href="momo.html"><button>Pay by MoMo</button></a>
-            </div>
-            <div class="payment-content-left-method-payment-item-img">
-              
-            </div>
-            
-          </div>
-          
-        </div>
-        <div class="payment-content-right">
-          <h3>Thong tin khach hang</h3>
-          <div class="payment-content-right-button">
-            <input type="text" placeholder="Full name">
-            
-          </div>
-          <div class="payment-content-right-button">
-            <input type="text" placeholder="Phone number">
-            
-          </div>
-          <div class="payment-content-right-button">
-            <input type="text" placeholder="Address">
-            
-          </div>
-          <div class="payment-content-right-button">
-            <input type="text" placeholder="Email">
-            
-          </div>
-			<p style="font-weight: bold;">Total: <span>0</span><sup>$</sup></p>
-		</div>
-</div>
-          </div>
-        </div>
-      </div>
-      <div class="payment-content-right-payment">
-        <a href="" target="_blank"><button >Order</button></a>
-      </div>
-	<div class="btn">
-		<a href="index.html" >&#8592; Come back</a>
-	</div>
-    </div>
-  </section>
-	<!----------------Brands -------------->
-<div class="brands">
-	<div class="small-container">
-	<div class="row">
-		<div class="col-5">
-			<img src="https://i.pinimg.com/originals/19/64/d0/1964d07c9e625f0804ca7d890beacfa7.jpg" alt="Yonex">
-		</div>
-		<div class="col-5">
-			<img src="https://i.pinimg.com/originals/81/14/0e/81140e22d5080962861b59090d6fdbd8.jpg" alt="Lining" style="width:120%;height:120%;" >
-		</div>
-		<div class="col-5">
-			<img src="https://yousport.vn/admin/media/Brands/kumpoo_logo_square.png" alt="Kumpoo" >
-		</div>
-		<div class="col-5">
-			<img src="https://g4r5b6f7.stackpathcdn.com/wp-content/uploads/2020/10/Victor-Logo.png" alt="Victor">
-		</div>
-		<div class="col-5">
-			<img src="https://cdn.shopvnb.com/themes/images/logo.svg" alt="VNB"> 
-		</div>
-	</div>
-	</div>
-</div>
-	
-	<!----------------- Footer ----------------->
-<div id="contact">
-	<div class="footer">
-		<div class="container">
-			<div class="row">
-				<div class="footer-col-2">
-					<img src="mylogo.png" alt="Logo" width="140px" height="100px">
-					<p>Our purpose is to sustainably make the please and
-							benefits of sports accessible to the many
-					</p>
-				</div>
-				<div class="footer-col-4">
-					<h3 style="padding-right:50px;">Follow me</h3>
-					<div class="wrapper">
-						<div class="button">
-								<div class="icons">
-										<a href="https://www.facebook.com/tranduc.2607?mibextid=vk8aRt" target="_blank"><i class="fa-brands fa-facebook" style="color:black;"></i></a>
+ <div class="container">
+    <img src="https://images.careerbuilder.vn/employer_folders/lot9/221789/95340imgpsh_fullsize.jpg" style="width:260px;height:120px;margin-left:-30px;">
+    <h1>Payment</h1>
+   <img src="" style="width:220px;height:220px; margin-top:-200px;float:right;">
+    <form action="">
+      <label for="cardno">Card Number
+        <p>0375599679</p>
+      </label>
+      <div class="float">
+        <label for="validtill">Chu tai khoan
+          <p>Tran Duy Duc</p>
+        </label>
+        <label for="cvv">Noi dung
+          <p style="margin-bottom:20px;">Ten + sdt nhan hang</p>
+        </label></div>
+        <label for="checkbox">
+          <input type="checkbox" name="checkbox" id="checkbox"/>
+          <h7>Payment Address is the same as the Delivery Address</h7>
+        </label>
+        <button><h3 style="font-weight: bold;">Total: <span>0</span><sup>$</sup></h3>
+</button>
+      
+    </form>
+  </div>
 
-								</div>
-								<div class="icons">
-										<i class="fa-brands fa-twitter" style="color:black;"></i>
 
-								</div>
-								<div class="icons">
-										<a href="https://instagram.com/td.l3o_04?igsshid=OGQ5ZDc2ODk2ZA==" target="_blank"><i class="fa-brands fa-instagram" style="color:black;"></i></a>
-
-								</div>
-								<div class="icons">
-										<a href="mailto:tranduyduc9679@gmail.com" target="_blank"><i class="fa-regular fa-envelope" style="color:black;"></i></a>
-
-								</div>
-						</div>
-					</div>
-					<h3 style="padding-right:50px;padding-top:10px;">Contact: 0375599***</h3>
-				</div>
-			</div>
-			<hr>
-			<p class="copyright">@Designed by GDuccky</p>
-		</div>
-	</div>
-</div>
-	<!-- js for toggle menu -->
-	<script>
+<!-- js for toggle menu -->
+<script>
 	var MenuItems=document.getElementById("MenuItems");
 	MenuItems.style.maxHeight="0px";
 	function menutoggle(){
@@ -169,10 +162,10 @@
 							MenuItems.style.maxHeight="0px";
 					}
 	}
-	</script>
-	
-	<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-	<script>
+</script>
+
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<script>
 	$(document).ready(function(){
 			$(window).scroll(function(){
 					if($(this).scrollTop()){
@@ -182,9 +175,9 @@
 					}
 			})
 	})
-	</script>
-	<script src="script.js"></script>
-	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</script>
+<script src="script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
