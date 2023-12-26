@@ -1,151 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>DK Store | Badminton</title>
-	<link rel="icon" type="image/x-icon"href="icoin-ao-cau-long-thiet-ke.png">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href=
-	"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
-	</link>
-  <style>
-    *{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
-body{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  min-height:200vh;
-  background-color:#ddd;
-}
-.container{
-  width:500px;
-  background:#fff;
-  padding:30px;
-  position:relative;
-  border-radius:20px;
-}
-h6{
-  font-size:20px;
-  color:black;
-}
-
-h1{
-  padding-bottom:10px;
-  font-size:40px;
-  color:black;
-}
-form label{
-  color:black;
-  text-transform:uppercase;
-  position:relative;
-  font-size:15px;
-  word-spacing:4px;
-}
-form select{
-  width:100%;
-  outline:none;
-  border:none;
-  border-bottom:1px solid black;
-  text-transform:capitalize;
-  padding-top:3px;
-  color:black;
-  padding-bottom:3px;
-  font-size:18px;
-  margin-left:-3px;
-  background-color:transparent;
-}
-form #cardno{
-  width:100%;
-  outline:none;
-  border:none;
-  border-bottom:1px solid black;
-  padding-top:5px;
-  margin-bottom:2px;
-  padding-right:30px;
-  color:black;
-  font-size:18px;
-  background-color:transparent;
-  padding-bottom:5px;
-}
-#validtill, #cvv{
-  border:none;
-  border-bottom:1px solid black;
-  outline:none;
-  width:100%;
-  padding-top:14px;
-  margin-bottom:56px;
-  color:black;
-  background-color:transparent;
-  font-size:18px;
-}
-p{
-  margin:8px 0;
-  padding:1px;
-  border-bottom:1px solid black;
-  font-size:22px;
-  text-transform:none;
-}
-button{
-  border:none;
-  outline:none;
-  text-align:center;
-  width:100%;
-  height:40px;
-  background:black;
-  color:white;
-  border-radius:20px;
-  padding:10px;
-  margin-top:20px;
-  font-weight:bold;
-  cursor:pointer;
-}
-h7{
-  font-size:15px;
-  font-weight:bold;
-}
-h6{
-  font-size:30px;
-}
-
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DK Store | Badminton</title>
+<link rel="icon" type="image/x-icon"href="icoin-ao-cau-long-thiet-ke.png">
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+</link>
 </head>
 
 <body>
-
- <div class="container">
-    <img src="https://images.careerbuilder.vn/employer_folders/lot9/221789/95340imgpsh_fullsize.jpg" style="width:260px;height:120px;margin-left:-30px;">
-    <h1>Payment</h1>
-   <img src="qrmomo.jpg" style="width:220px;height:220px; margin-top:-200px;float:right;">
-    <form action="">
-      <label for="cardno">Card Number
-        <p>0375599679</p>
-      </label>
-      <div class="float">
-        <label for="validtill">Chu tai khoan
-          <p>Tran Duy Duc</p>
-        </label>
-        <label for="cvv">Noi dung
-          <p style="margin-bottom:20px;">Ten + sdt nhan hang</p>
-        </label></div>
-        <label for="checkbox">
-          <input type="checkbox" name="checkbox" id="checkbox"/>
-          <h7>Payment Address is the same as the Delivery Address</h7>
-        </label>
-        <button><h3 style="font-weight: bold;">Total: <span>0</span><sup>$</sup></h3>
-</button>
+<div class="container">
+    <div class="payment-content row">
+      <div class="payment-content-left">
+        <div class="payment-content-left-method-payment">
+          <p style="font-weight:bold;">Delivery Method</p>
+          <div class="payment-content-left-method-delivery-item">
+            <input checked type="radio">
+            <label for="">Giao hang chuyen phat nhanh</label>
+          </div>
+        </div>
+        <div class="payment-content-left-method-payment">
+          <p style="font-weight:bold;">Payment Method</p>
+          <p>Moi giao dich deu duoc bao mat va ma hoa <br>Thong tin the tin dung se khong bao gio duoc luu</p>
+          <div class="payment-content-left-method-payment-item">
+            <input name="payment-method" type="radio">
+            <label for="">Thanh toan bang ngan hang</label>
+          </div>
+          <div class="payment-content-left-method-delivery-item-img">
+            <img src="data:image/png;base64,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" style="heigth:120px;width:120px;">
+          </div>
+           <div class="payment-content-left-method-delivery-item">
+            <input name="payment-method" type="radio">
+            <label for="">Thanh toan khi nhan hang</label>
+          </div>
+           <div class="payment-content-left-method-delivery-item">
+            <a href="momo.html"><button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaRop4DsZKJ1f7hiiTMjvhIT4YVEIFaiDoKg&usqp=CAU" style="width:100px;height:100px;"> <p>Thanh toan bang momo<p></button></a>
+          </div>
+          <div class="btn" style="margin-top:100px;">
+            <a href="index.html"><p>&#8592; Come back</p></a>
+          </div>
+        </div>
+      </div>
+      <div class="payment-content-right">
+        <h2>Information</h2>
+        <div class="payment-content-right-button">
+          <input type="text" placeholder="Full name">
+        </div>
+        <div class="payment-content-right-button">
+          <input type="text" placeholder="Phone number">
+        </div>
+        <div class="payment-content-right-button">
+          <input type="text" placeholder="Address">
+        </div>
+        <div class="payment-content-right-button">
+          <input type="text" placeholder="Email">
+        </div>
+        <div class="price-total" style="float:right;">
+			<p style="font-weight: bold;margin-right:280px;">Total: <span>0</span><sup>$</sup></p>
+		</div>
+        <div class="payment-content-right-payment">
+        <div class="btn">
+          <p style="font-size:20px;font-weight:bold;">Order</p>
+        </div>
+      </div>
+      </div>
       
-    </form>
+    </div>
   </div>
+ 
 
 
 <!-- js for toggle menu -->
