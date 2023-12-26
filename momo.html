@@ -27,8 +27,8 @@ body{
   min-height:130vh;
   background-color:#ddd;
 }
-.container{
-  width:500px;
+.container1{
+  width:520px;
   background:#fff;
   padding:30px;
   position:relative;
@@ -116,14 +116,29 @@ h7{
 h6{
   font-size:30px;
 }
+.comeback-item{
+  background:white;
+  color:black;
+  outline:none;
+  border:1px solid black;
+  width:50px;
+  height:50px;
+  font-size:25px;
+  border-radius:50%;
+  transition: all 0.5s ease-out;
+}
+.comeback-item:hover, .comeback-item:focus{
+  background:black;
+  color:white;
+}
 
   </style>
 </head>
 
 <body>
 
- <div class="container">
-    <img src="https://images.careerbuilder.vn/employer_folders/lot9/221789/95340imgpsh_fullsize.jpg" style="width:260px;height:120px;margin-left:-30px;">
+ <div class="container1">
+    <img src="https://images.careerbuilder.vn/employer_folders/lot9/221789/95340imgpsh_fullsize.jpg" style="width:270px;height:120px;margin-left:-30px;">
     <h1>Payment</h1>
    <img src="qrmomo.jpg" style="width:210px;height:210px; margin-top:-200px;float:right;">
     <form action="">
@@ -143,10 +158,10 @@ h6{
         </label>
         <button><h3 style="font-weight: bold;">Total: <span>0</span><sup>$</sup></h3>
 </button>
-      
+      <div class="comeback">
+       <a href="index.html"><button class="comeback-item"><i class="fa-solid fa-house"></i></button></a>
     </form>
   </div>
-
 
 <!-- js for toggle menu -->
 <script>
@@ -179,5 +194,6 @@ h6{
 <script src="script.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  
 </body>
 </html>
