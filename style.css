@@ -616,10 +616,11 @@ input:focus{
 }
 
 .payment-content-left{
-  width:50%;
+  margin-left:200px;
+  width:100%;
 }
 .payment-content-right{
-  width:50%;
+  width:0%;
   border-left:2px solid black;
   padding-left:15px;
 }
@@ -678,41 +679,105 @@ input:focus{
   padding:10px;
   margin-bottom:10px;
 }
+/*button momo*/
 .payment-content-left-method-delivery-item button{
   outline:none;
+  border-radius:10px;
   margin-top:30px;
   text-align:center;
   align-items:center;
   display:flex;
   cursor:pointer;
-  width:350px;
+  width:400px;
 }
 .payment-content-left-method-delivery-item button:hover{
   color:white;
   background:#ab3065;
 }
-.payment-content-left-method-payment-item {
-  position: relative;
+/*button acb*/
+.payment-content-left-method-delivery-item-acb button{
+  outline:none;
+  border-radius:10px;
+  margin-top:30px;
+  text-align:center;
+  align-items:center;
+  display:flex;
+  cursor:pointer;
+  width:400px;
+}
+.payment-content-left-method-delivery-item-acb button:hover{
+  color:white;
+  background:#164ca9;
+}
+/*button nhan hang*/
+.payment-content-left-method-delivery-item-face i{
+  width:130px;
+  height:100px;
+  padding-top:25px;
+  padding-bottom:25px;
+  font-size:50px;
+}
+.payment-content-left-method-delivery-item-face button{
+  outline:none;
+  border-radius:10px;
+  margin-top:30px;
+  text-align:center;
+  align-items:center;
+  display:flex;
+  cursor:pointer;
+  width:400px;
+}
+.payment-content-left-method-delivery-item-face button:hover{
+  color:white;
+  background:black;
 }
 
-.payment-content-left-method-payment-item label::after {
-  content: "Ngan Hang ACB CN Gia Kiem\nSTK:28874407\nChuTK:Tran Duy Duc\nNoi dung ck: Ten + sdt nguoi nhan"; /* Insert a line break using \n */
+/* thanh toan cho nut momo*/
+.payment-content-left-method-delivery-item button {
+  position: relative; 
+}
 
+.payment-content-left-method-delivery-item button::after {
+  content: "";
+  display: none;
   position: absolute;
-  top: 100%;
-  left: 0;
-  visibility: hidden;
-  opacity: 0;
-  transition: all 0.3s ease-in-out; /* Visual effect */
-  display: block;
+  top: 60%;
+  right: -350px; 
+  transform: translateY(-50%);
+  width: 300px; 
+  height: 300px; 
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaRop4DsZKJ1f7hiiTMjvhIT4YVEIFaiDoKg&usqp=CAU"); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: opacity 0.3s ease-in-out; 
 }
 
-
-.payment-content-left-method-payment-item input:checked + label::after {
-  visibility: visible;
+.payment-content-left-method-delivery-item button:hover::after {
+  display: block; 
   opacity: 1; 
 }
 
+/* thanh toan cho nut acb*/
+.payment-content-left-method-delivery-item-acb button {
+  position: relative; 
+}
 
+.payment-content-left-method-delivery-item-acb button::after {
+  content: "";
+  display: none; 
+  position: absolute;
+  top: 60%;
+  right: -350px; 
+  transform: translateY(-50%);
+  width: 300px; 
+  height: 300px; 
+  background-image: url(""); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: opacity 0.3s ease-in-out; 
+}
 
-
+.payment-content-left-method-delivery-item-acb button:hover::after {
+  display: block; 
+  opacity: 1; 
+}
