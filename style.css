@@ -742,10 +742,10 @@ input:focus{
   display: none;
   position: absolute;
   top: 60%;
-  right: -350px; 
+  right: -550px; 
   transform: translateY(-50%);
-  width: 300px; 
-  height: 300px; 
+  width: 500px; 
+  height: 500px; 
   background-image: url("payment-momo.png"); 
   background-size: cover;
   background-repeat: no-repeat;
@@ -767,10 +767,10 @@ input:focus{
   display: none; 
   position: absolute;
   top: 60%;
-  right: -350px; 
+  right: -550px; 
   transform: translateY(-50%);
-  width: 300px; 
-  height: 300px; 
+  width: 500px; 
+  height: 600px; 
   background-image: url("payment-acb.png"); 
   background-size: cover;
   background-repeat: no-repeat;
