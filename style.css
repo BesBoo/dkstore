@@ -742,7 +742,7 @@ input:focus{
   display: none;
   position: absolute;
   top: 60%;
-  right: -700px; 
+  right: -800px; 
   transform: translateY(-50%);
   width: 650px; 
   height: 650px; 
@@ -767,7 +767,7 @@ input:focus{
   display: none; 
   position: absolute;
   top: 60%;
-  right: -670px; 
+  right: -800px; 
   transform: translateY(-50%);
   width: 620px; 
   height: 750px; 
