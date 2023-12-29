@@ -44,8 +44,8 @@
           </div>
         <div class="payment-content-left-method-delivery-item-face">
             <a href="COD.html"><button><i class="fa-solid fa-money-check-dollar"></i> <p>Payment on delivery<p></button></a>
-          <div class="price-total" style="float:right;">
-			<p style="font-weight: bold;margin-right:100px;">Total: <span>0</span><sup>$</sup></p>
+          <div class="price-total" style="float:left;">
+			<p style="font-weight: bold;margin-left:100px;">Total: <span>0</span><sup>$</sup></p>
           <div class="btn" style="margin-top:100px;">
             <a href="index.html"><p>&#8592; Come back</p></a>
           </div>
@@ -129,6 +129,17 @@
 	})
 	</script>
 <script src="script.js"></script>
+<script>
+        // Bắt đầu các hành động cho trang payment
+        document.addEventListener('DOMContentLoaded', function () {
+            const cartTotalElement = document.querySelector('.price-total span');
+
+            // Lấy tổng giá từ LocalStorage và hiển thị nó
+            const totalPrice = getPaymentTotal();
+            cartTotalElement.innerHTML = totalPrice;
+        });
+</script>
+
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
