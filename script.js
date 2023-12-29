@@ -89,6 +89,31 @@ cartshow.addEventListener("click",function(){
 cartBtn.addEventListener("click",function(){
     document.querySelector(".cart").style.right="-100%"
 })
+
+//----------------- test dong bo ----------------------------
+// Hàm để lưu giá sản phẩm vào LocalStorage
+function saveProductPrice(productPrice) {
+    localStorage.setItem('currentProductPrice', productPrice);
+}
+
+// Hàm để cập nhật tổng giá trị cho trang payment
+function updatePaymentTotal(price) {
+    localStorage.setItem('totalPriceForPayment', price);
+}
+
+// Hàm để lấy giá trị tổng giá từ LocalStorage
+function getPaymentTotal() {
+    return localStorage.getItem('totalPriceForPayment') || '0';
+}
+
+// Hàm để xóa giá trị tổng giá trong LocalStorage
+function clearPaymentTotal() {
+    localStorage.removeItem('totalPriceForPayment');
+}
+
+
+//----------------------------------------------------
+
 //---------------------------- payment------------------------------
 function cardspace(){
   var carddigit=document.getElementById('cardno').value;
