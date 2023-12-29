@@ -1633,36 +1633,54 @@
 		</div>
 	</div>
 </div>
-	<!-- js for toggle menu -->
-	<script>
-	var MenuItems=document.getElementById("MenuItems");
-	MenuItems.style.maxHeight="0px";
-	function menutoggle(){
-			if(MenuItems.style.maxHeight="0px")
-					{
-							MenuItems.style.maxHeight="200px";
-					}
-			else
-					{
-							MenuItems.style.maxHeight="0px";
-					}
-	}
-	</script>
+<!-- js for toggle menu -->
+<script>
+var MenuItems=document.getElementById("MenuItems");
+MenuItems.style.maxHeight="0px";
+function menutoggle(){
+		if(MenuItems.style.maxHeight="0px")
+				{
+						MenuItems.style.maxHeight="200px";
+				}
+		else
+				{
+						MenuItems.style.maxHeight="0px";
+				}
+}
+</script>
+
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<script>
+$(document).ready(function(){
+		$(window).scroll(function(){
+				if($(this).scrollTop()){
+						$('header').addClass('sticky');
+				}else{
+						$('header').addClass('sticky');
+				}
+		})
+})
+</script>
+<script src="script.js"></script>
+<script>
+	// Bắt đầu các hành động cho trang index
+	document.addEventListener('DOMContentLoaded', function () {
+	    const addToCartButtons = document.querySelectorAll('.btn');
 	
-	<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-	<script>
-	$(document).ready(function(){
-			$(window).scroll(function(){
-					if($(this).scrollTop()){
-							$('header').addClass('sticky');
-					}else{
-							$('header').addClass('sticky');
-					}
-			})
-	})
-	</script>
-	<script src="script.js"></script>
-	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-	</body>
-	</html>
+	    addToCartButtons.forEach(function (button) {
+		button.addEventListener('click', function (event) {
+		    const product = event.target.parentElement;
+		    const productImg = product.querySelector('img').src;
+		    const productName = product.querySelector('h4').innerText;
+		    const productPrice = product.querySelector('p span').innerText;
+	
+		    addCart(productImg, productName, productPrice);
+		    saveProductPrice(productPrice);
+		});
+	    });
+	});
+</script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
