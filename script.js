@@ -91,25 +91,44 @@ cartBtn.addEventListener("click",function(){
 })
 
 //----------------- test dong bo ----------------------------
-// Hàm để lưu giá sản phẩm vào LocalStorage
-function saveProductPrice(productPrice) {
-    localStorage.setItem('currentProductPrice', productPrice);
-}
+// // Hàm để lưu giá sản phẩm vào LocalStorage
+// function saveProductPrice(productPrice) {
+//     localStorage.setItem('currentProductPrice', productPrice);
+// }
 
-// Hàm để cập nhật tổng giá trị cho trang payment
-function updatePaymentTotal(price) {
-    localStorage.setItem('totalPriceForPayment', price);
-}
+// // Hàm để cập nhật tổng giá trị cho trang payment
+// function updatePaymentTotal(price) {
+//     localStorage.setItem('totalPriceForPayment', price);
+// }
 
-// Hàm để lấy giá trị tổng giá từ LocalStorage
-function getPaymentTotal() {
-    return localStorage.getItem('totalPriceForPayment') || '0';
-}
+// // Hàm để lấy giá trị tổng giá từ LocalStorage
+// function getPaymentTotal() {
+//     return localStorage.getItem('totalPriceForPayment') || '0';
+// }
 
-// Hàm để xóa giá trị tổng giá trong LocalStorage
-function clearPaymentTotal() {
-    localStorage.removeItem('totalPriceForPayment');
-}
+// // Hàm để xóa giá trị tổng giá trong LocalStorage
+// function clearPaymentTotal() {
+//     localStorage.removeItem('totalPriceForPayment');
+// }
+
+const orderButton = document.querySelector(".price-total button a");
+orderButton.addEventListener("click", function(event) {
+  event.preventDefault(); // Prevent default link behavior
+
+  var total = document.querySelector(".price-total span").innerHTML;
+  var paymentUrl = new URL("payment.html", window.location.origin); // Construct full URL
+  paymentUrl.searchParams.set("total", total); // Add total to query string
+  window.location.href = paymentUrl; // Redirect with total in query string
+});
+
+// In payment.html:
+window.onload = function() {
+  var urlParams = new URLSearchParams(window.location.search);
+  var totalFromIndex = urlParams.get("total");
+  if (totalFromIndex) {
+    document.querySelector(".price-total span").innerHTML = totalFromIndex;
+  }
+};
 
 
 //----------------------------------------------------
