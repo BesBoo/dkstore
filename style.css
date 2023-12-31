@@ -478,7 +478,7 @@ input:focus{
 	background:#f15a3f;
 	color:black;
 	padding:8px 30px;
-	margin:30px 0;
+	margin:40px 0;
 	width:200px;
 	font-size: 20px;
 	border:none;
@@ -781,3 +781,39 @@ input:focus{
   display: block; 
   opacity: 1; 
 }
+/*------------- Search -------------------*/
+.inputBox_container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  max-width: 500px;
+  width: fit-content;
+  height: fit-content;
+  background-color: #2d4059;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.search_icon {
+  height: 1.5em;
+  padding: 0 0.5em 0 0.8em;
+  fill: white;
+}
+
+.inputBox {
+  background-color: transparent;
+  color: #ffffff;
+  outline: none;
+  width: 500px;
+  height:45px;
+  border: 0;
+/*   padding: 0.5em 1.5em 0.5em 0; */
+  font-size: 20px;
+}
+
+::placeholder {
+  font-size:20px;
+  color: white;
+}
+
+
