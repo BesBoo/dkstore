@@ -30,7 +30,6 @@
 						<ul id="MenuItems">
 							<li><a href="#home">Home</a></li>
 							<li><a href="#products">Products</a></li>
-							<li><a href="#intruction">Instruction</a></li>
 							<li><a href="#contact">Contact</a></li>
 						</ul>
 					</nav>
@@ -91,24 +90,13 @@
 	<section class="small-container">
 		<h2 class="title">Featured Products</h2>
 		<div class="row row-2">
-		    <div class="inputBox_container">
-  <svg class="search_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" alt="search icon">
-    <path d="M46.599 46.599a4.498 4.498 0 0 1-6.363 0l-7.941-7.941C29.028 40.749 25.167 42 21 42 9.402 42 0 32.598 0 21S9.402 0 21 0s21 9.402 21 21c0 4.167-1.251 8.028-3.342 11.295l7.941 7.941a4.498 4.498 0 0 1 0 6.363zM21 6C12.717 6 6 12.714 6 21s6.717 15 15 15c8.286 0 15-6.714 15-15S29.286 6 21 6z">
-    </path>
-  </svg>
-  <input class="inputBox" id="inputBox" type="text" placeholder="Search For Products">
-</div>
-
-			<select id="sorting">
-				
-				<option value="lowToHigh">Short by price</option>
-				<option value="alphabetical">Short by A-Z</option>
-				<option value="highToLow">Short by price low</option>
-				
-			</select>
-	    </div>
-    
-		<div class="row">
+		    <form>
+		      <i class="fas fa-search"></i>
+          <input type="text" name="" id="search-item" placeholder="Search products" onkeyup="search()">
+		    </form>
+        <button class="btn">Sort by price</button>
+    </div>
+		<div class="row" id="product-list">
 			<div class="col-4">
 				<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/set-vot-cau-long-yonex-astrox-100zz-china-limited-noi-dia-trung-1_1697576701.webp">
 				<h4>Set Yonex Astrox 100zz China-limited</h4>
@@ -245,6 +233,124 @@
             <p><strike>169</strike><sup>$</sup>(-6%) &#8594;<span style="color:red;font-weight: bold;"> 159</span><sup style="color:red;font-weight: bold;">$</sup></p>
             <button class="btn">Add to cart</button>
     </div>
+      <div class="col-4">
+							<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/vot-cau-long-lining-bladex-900-sun-max-chinh-hang..webp">
+							<h4>Lining Bladex 900 Sun Max</h4>
+							<div class="rating">
+									<!-- ngoi sao nguyen ven -->
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+							</div>
+							<div class="product-item-text">
+									<p><span>169</span><sup>$</sup></p>
+							</div>
+							<button class="btn">Add to cart</button>
+					</div>
+      <div class="col-4">
+							<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/vot-cau-long-lining-axforce-100-vang-golden-kirin-noi-dia-4.webp">
+							<h4>Lining Axforce 100-Golden Kirin</h4>
+							<div class="rating">
+									<!-- ngoi sao nguyen ven -->
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+							</div>
+							<div class="product-item-text">
+									<p><span>189</span><sup>$</sup></p>
+							</div>
+							<button class="btn">Add to cart</button>
+					</div>
+      <div class="col-4">
+							<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/set-vot-cau-long-victor-bs12-55th-limited-gift-box-5.webp">
+							<h4>Victor BS12-55th Limited Gift Box</h4>
+							<div class="rating">
+									<!-- ngoi sao nguyen ven -->
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+							</div>
+							<div class="product-item-text">
+									<p><span>245</span><sup>$</sup></p>
+							</div>
+							<button class="btn">Add to cart</button>
+					</div>
+      <div class="col-4">
+							<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/set-vot-cau-long-lining-son-chinh-hang_1693168930.webp" style="height:230px;">
+							<h4>Set Lining Mountaint</h4>
+							<div class="rating">
+									<!-- ngoi sao nguyen ven -->
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+							</div>
+							<p><strike>130</strike><sup>$</sup>(-4%) &#8594;<span style="color:red;font-weight: bold;"> 125</span><sup style="color:red;font-weight: bold;">$</sup></p>
+							<button class="btn">Add to cart</button>
+					</div>
+					<div class="col-4">
+							<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/set-vot-cau-long-lining-aypt061-lam-noi-dia-1_1693172681.webp" style="height:230px;">
+							<h4>Set Lining Forest</h4>
+							<div class="rating">
+									<!-- ngoi sao nguyen ven -->
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+							</div>
+							<p><strike>130</strike><sup>$</sup>(-4%) &#8594;<span style="color:red;font-weight: bold;"> 125</span><sup style="color:red;font-weight: bold;">$</sup></p>
+							<button class="btn">Add to cart</button>
+					</div>
+					<div class="col-4">
+							<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/set-vot-cau-long-lining-phong-chinh-hang-1_1693172852.webp" style="height:230px;">
+							<h4>Set Lining Wind</h4>
+							<div class="rating">
+									<!-- ngoi sao nguyen ven -->
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+							</div>
+							<p><strike>130</strike><sup>$</sup>(-4%) &#8594;<span style="color:red;font-weight: bold;"> 125</span><sup style="color:red;font-weight: bold;">$</sup></p>
+							<button class="btn">Add to cart</button>
+					</div>
+      <div class="col-4">
+					<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/set-vot-cau-long-vs-dragon-noi-dia-trung_1697680127.webp" height="230px">
+					<h4>Set VS Dragon</h4>
+					<div class="rating">
+							<!-- ngoi sao nguyen ven -->
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+					</div>
+					<p><span>89</span><sup>$</sup></p>
+					<button class="btn">Add to cart</button>
+			</div>
+			<div class="col-4">
+					<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/set-vot-cau-long-kamito-tm-legend-2023-chinh-hang_1696819201.webp" style="height:210px;">
+					<h4>Set Kamito-TM-Legend 2023</h4>
+					<div class="rating">
+							<!-- ngoi sao nguyen ven -->
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+					</div>
+					<p><span>89</span><sup>$</sup></p>
+					<button class="btn">Add to cart</button>
+			</div>
 			<div class="col-4">
 				<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/vot-cau-long-felet-dome-08-blk-chinh-hang_1701897698.webp" style="height:230px;">
 				<h4> Felet Dome 08 (BLK) </h4>
@@ -279,6 +385,177 @@
 				</div>
 				<button class="btn">Add to cart</button>
 			</div>
+      <div class="col-4">
+							<img src="https://cdn.shopvnb.com/img/300x300/uploads/san_pham/vot-cau-long-lining-calibar-900b-chinh-hang-5.webp" height="230px">
+							<h4>Lining Calibar 900B</h4>
+							<div class="rating">
+									<!-- ngoi sao nguyen ven -->
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+							</div>
+							<p><span>169</span><sup>$</sup></p>
+							<button class="btn">Add to cart</button>
+					</div>
+					<div class="col-4">
+							<img src="https://cdn.shopvnb.com/img/300x300/uploads/san_pham/vot-cau-long-yonex-astrox-88d-pro-chinh-hang-1.webp" height="230px">
+							<h4>Yonex Astrox 88D Pro</h4>
+							<div class="rating">
+									<!-- ngoi sao nguyen ven -->
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+							</div>
+							<p><span>160</span><sup>$</sup></p>
+							<button class="btn">Add to cart</button>
+					</div>
+					<div class="col-4">
+							<img src="https://cdn.shopvnb.com/img/300x300/uploads/san_pham/vot-cau-long-yonex-astrox-100zz-kurenai-do-new-2021-5.webp" height="230px">
+							<h4>Yonex Astrox 100zz-Kurenai-Red 2021</h4>
+							<div class="rating">
+									<!-- ngoi sao nguyen ven -->
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+							</div>
+							<p><strike>184</strike><sup>$</sup>(-3%) &#8594;<span style="color:red;font-weight: bold;"> 179</span><sup style="color:red;font-weight: bold;">$</sup></p>
+							<button class="btn">Add to cart</button>
+					</div>
+					<div class="col-4">
+							<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/set-vot-cau-long-kumpoo-99-pro-trang-tim-noi-dia-trung_1695254966.webp" height="230px">
+							<h4>Kumpoo PC-99 Pro (Black/Purple)</h4>
+							<div class="rating">
+									<!-- ngoi sao nguyen ven -->
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+							</div>
+							<p><span>34</span><sup>$</sup></p>
+							<button class="btn">Add to cart</button>
+					</div>
+					<div class="col-4">
+							<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/vot-cau-long-kumpoo-power-control-k520-pro-trang-chinh-hang-1_1.webp" height="230px">
+							<h4>Kumpoo Power Control K520 Pro</h4>
+							<div class="rating">
+									<!-- ngoi sao nguyen ven -->
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+							</div>
+							<p><span>29</span><sup>$</sup></p>
+							<button class="btn">Add to cart</button>
+					</div>
+          <div class="col-4">
+					<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/vot-cau-long-vs-challenger-720-xach-tay_1701375403.webp" style="height:230px;">
+					<h4>VS Challenger 720</h4>
+					<div class="rating">
+							<!-- ngoi sao nguyen ven -->
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+					</div>
+					<p><span>30</span><sup>$</sup></p>
+					<button class="btn">Add to cart</button>
+			</div>
+			<div class="col-4">
+					<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/set-vot-cau-long-kumpoo-k520s-hong-noi-dia-trung_1701735612.webp" style="height:230px;">
+					<h4>Kumpoo K520S-Pink</h4>
+					<div class="rating">
+							<!-- ngoi sao nguyen ven -->
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+					</div>
+					<p><span>40</span><sup>$</sup></p>
+					<button class="btn">Add to cart</button>
+			</div>
+			<div class="col-4">
+					<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/vot-cau-long-mizuno-altius-01-feels-ma-jp-8_1701374815.webp" style="height:230px;">
+					<h4>Mizuno Altius 01 Feels</h4>
+					<div class="rating">
+							<!-- ngoi sao nguyen ven -->
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<!-- 1/2 ngoi sao -->
+							<i class="fa-regular fa-star-half-stroke"></i>
+					</div>
+					<div class="product-item-text">
+							<p><span>170</span><sup>$</sup></p>
+					</div>
+					<button class="btn">Add to cart</button>
+			</div>
+			<div class="col-4">
+					<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/vot-cau-long-vs-challenger-750-xach-tay_1700856680.webp" style="height:230px;">
+					<h4>VS Challenger 750</h4>
+					<div class="rating">
+							<!-- ngoi sao nguyen ven -->
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+					</div>
+					<p><span>25</span><sup>$</sup></p>
+					<button class="btn">Add to cart</button>
+			</div>
+			<div class="col-4">
+					<img src="https://cdn.shopvnb.com/img/600x600/uploads/san_pham/set-vot-cau-long-lining-axforce-90-xanh-dragon-max-chinh-hang-5.webp" style="height:230px;">
+					<h4>Lining Axforce 90 Dragon Blue MAX</h4>
+					<div class="rating">
+							<!-- ngoi sao nguyen ven -->
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+					</div>
+					<p><span>150</span><sup>$</sup></p>
+					<button class="btn">Add to cart</button>
+			</div>
+			<div class="col-4">
+					<img src="https://cdn.shopvnb.com/img/600x600/uploads/gallery/vot-cau-long-lining-axforce-bigbang-trang-noi-dia-trung-5.webp" style="height:230px;">
+					<h4>Lining Axforce BigBang (White)</h4>
+					<div class="rating">
+							<!-- ngoi sao nguyen ven -->
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+					</div>
+					<p><span>120</span><sup>$</sup></p>
+					<button class="btn">Add to cart</button>
+			</div>
+					<div class="col-4">
+							<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/vot-cau-long-kumpoo-blade-power-control-xanh-chinh-hang-1.webp" height="230px">
+							<h4>Kumpoo Blade Power Control</h4>
+							<div class="rating">
+									<!-- ngoi sao nguyen ven -->
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+							</div>
+							<p><span>40</span><sup>$</sup></p>
+							<button class="btn">Add to cart</button>
+					</div>
 			<div class="col-4">
 				<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/vot-cau-long-lining-halbertec-5000-noi-dia-trung-6_1694024653.webp" style="height:230px;">
 				<h4>Lining Halbertec 5000</h4>
@@ -296,6 +573,48 @@
 				</div>
 				<button class="btn">Add to cart</button>
 			</div>
+      <div class="col-4">
+					<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/vot-cau-long-victor-auraspeed-90f-tim-noi-dia-trung_1699307192.webp" height="230px">
+					<h4>Victor Auraspeed 90F-Purple</h4>
+					<div class="rating">
+							<!-- ngoi sao nguyen ven -->
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+					</div>
+					<p><span>159</span><sup>$</sup></p>
+					<button class="btn">Add to cart</button>
+			</div>
+			<div class="col-4">
+					<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/vot-cau-long-apacs-z-power-900-rp-chinh-hang_1698628933.webp" style="height:230px;">
+					<h4>Apacs Z-Power 900RP</h4>
+					<div class="rating">
+							<!-- ngoi sao nguyen ven -->
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+					</div>
+					<p><span>49</span><sup>$</sup></p>
+					<button class="btn">Add to cart</button>
+			</div>
+			<div class="col-4">
+					<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/vot-cau-long-lining-hc-1600-red-noi-dia-trung_1698460696.webp" height="230px">
+					<h4>Lining HC 1600-Red</h4>
+					<div class="rating">
+							<!-- ngoi sao nguyen ven -->
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+					</div>
+					<p><span>40</span><sup>$</sup></p>
+					<button class="btn">Add to cart</button>
+			</div>
 			<div class="col-4">
 					<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/set-vot-cau-long-kumpoo-moutains-and-rivers-chinh-hang-6.webp">
 					<h4>Set Kumpoo Moutaints and River</h4>
@@ -310,6 +629,20 @@
 					<div class="product-item-text">
 							<p><span>89</span><sup>$</sup></p>
 					</div>
+					<button class="btn">Add to cart</button>
+			</div>
+      <div class="col-4">
+					<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/vot-cau-long-yonex-arcsaber-73-light-rbyr-chinh-hang_1698453315.webp" height="230px">
+					<h4>Yonex Arcsaber-73 Light</h4>
+					<div class="rating">
+							<!-- ngoi sao nguyen ven -->
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+					</div>
+					<p><span>30</span><sup>$</sup></p>
 					<button class="btn">Add to cart</button>
 			</div>
 			<div class="col-4">
@@ -345,7 +678,7 @@
 					<button class="btn">Add to cart</button>
 			</div>
 			<div class="col-4">
-					<img src="https://cdn.shopvnb.com/img/600x600/uploads/gallery/vot-cau-long-lining-3d-calibar-001c-noi-dia-trung_1696476682.webp">
+					<img src="https://cdn.shopvnb.com/img/600x600/uploads/gallery/vot-cau-long-lining-3d-calibar-001c-noi-dia-trung_1696476682.webp" style="height:230px;">
 					<h4>Lining 3D Calibar 001C</h4>
 					<div class="rating">
 							<!-- ngoi sao nguyen ven -->
@@ -473,6 +806,34 @@
 						</div>
 						<button class="btn">Add to cart</button>
 				</div>
+      <div class="col-4">
+					<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/vot-cau-long-felet-woven-888-chinh-hang_1701804869.webp" style="height:230px;">
+					<h4>Felet-Woven 888</h4>
+					<div class="rating">
+							<!-- ngoi sao nguyen ven -->
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+					</div>
+					<p><span>140</span><sup>$</sup></p>
+					<button class="btn">Add to cart</button>
+			</div>
+			<div class="col-4">
+					<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/vot-cau-long-felet-woven-999-chinh-hang_1701805283.webp" style="height:230px;">
+					<h4>Felet-Woven 999</h4>
+					<div class="rating">
+							<!-- ngoi sao nguyen ven -->
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+					</div>
+					<p><span>140</span><sup>$</sup></p>
+					<button class="btn">Add to cart</button>
+			</div>
 				<div class="col-4">
 						<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/vot-cau-long-lining-bladex-800-green-chinh-hang-1.webp" style="height:230px;">
 						<h4>Lining Bladex 800-Green</h4>
@@ -503,677 +864,6 @@
 					<div class="product-item-text">
 							<p><span>210</span><sup>$</sup></p>
 					</div>
-					<button class="btn">Add to cart</button>
-			</div>
-			
-	</div>
-	<h2 class="title">New Products</h2>
-	<div class="row">
-					<div class="col-4">
-							<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/vot-cau-long-lining-bladex-900-sun-max-chinh-hang..webp">
-							<h4>Lining Bladex 900 Sun Max</h4>
-							<div class="rating">
-									<!-- ngoi sao nguyen ven -->
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-							</div>
-							<div class="product-item-text">
-									<p><span>169</span><sup>$</sup></p>
-							</div>
-							<button class="btn">Add to cart</button>
-					</div>
-					<div class="col-4">
-							<img src="https://cdn.shopvnb.com/img/300x300/uploads/san_pham/vot-cau-long-yonex-nanoflare-1000-tour-3.webp">
-							<h4>Yonex Nanoflare 1000 Tour</h4>
-							<div class="rating">
-									<!-- ngoi sao nguyen ven -->
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-							</div>
-							<div class="product-item-text">
-									<p><strike>140</strike><sup>$</sup>(-4%) &#8594;<span style="color:red;font-weight: bold;"> 135</span><sup style="color:red;font-weight: bold;">$</sup></p>
-							</div>
-							<button class="btn">Add to cart</button>
-					</div>
-					<div class="col-4">
-							<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/vot-cau-long-mizuno-altius-01-speed-2022-ma-jp-2.webp" style="height:200px;">
-							<h4>Mizuno Altius-01 Speed 2022</h4>
-							<div class="rating">
-									<!-- ngoi sao nguyen ven -->
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-							</div>
-							<div class="product-item-text">
-									<p><span>169</span><sup>$</sup></p>
-							</div>
-							<button class="btn">Add to cart</button>
-					</div>
-					<div class="col-4">
-							<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/vot-cau-long-mizuno-altius-01-feels-special-edition-ma-jp-2.webp">
-							<h4>Mizuno Altius-01 Feels-Speacial Edition</h4>
-							<div class="rating">
-									<!-- ngoi sao nguyen ven -->
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-							</div>
-							<div class="product-item-text">
-									<p><strike>175</strike><sup>$</sup>(-11%) &#8594;<span style="color:red;font-weight: bold;"> 155</span><sup style="color:red;font-weight: bold;">$</sup></p>
-							</div>
-							<button class="btn">Add to cart</button>
-					</div>
-					<div class="col-4">
-							<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/vot-cau-long-lining-axforce-100-vang-golden-kirin-noi-dia-4.webp">
-							<h4>Lining Axforce 100-Golden Kirin</h4>
-							<div class="rating">
-									<!-- ngoi sao nguyen ven -->
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-							</div>
-							<div class="product-item-text">
-									<p><span>189</span><sup>$</sup></p>
-							</div>
-							<button class="btn">Add to cart</button>
-					</div>
-			</div>
-			
-			<div class="row">
-					<div class="col-4">
-							<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/set-vot-cau-long-victor-bs12-55th-limited-gift-box-5.webp">
-							<h4>Victor BS12-55th Limited Gift Box</h4>
-							<div class="rating">
-									<!-- ngoi sao nguyen ven -->
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-							</div>
-							<div class="product-item-text">
-									<p><span>245</span><sup>$</sup></p>
-							</div>
-							<button class="btn">Add to cart</button>
-					</div>
-
-					<div class="col-4">
-							<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/set-vot-cau-long-lining-son-chinh-hang_1693168930.webp" style="height:230px;">
-							<h4>Set Lining Mountaint</h4>
-							<div class="rating">
-									<!-- ngoi sao nguyen ven -->
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-							</div>
-							<p><strike>130</strike><sup>$</sup>(-4%) &#8594;<span style="color:red;font-weight: bold;"> 125</span><sup style="color:red;font-weight: bold;">$</sup></p>
-							<button class="btn">Add to cart</button>
-					</div>
-					<div class="col-4">
-							<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/set-vot-cau-long-lining-aypt061-lam-noi-dia-1_1693172681.webp" style="height:230px;">
-							<h4>Set Lining Forest</h4>
-							<div class="rating">
-									<!-- ngoi sao nguyen ven -->
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-							</div>
-							<p><strike>130</strike><sup>$</sup>(-4%) &#8594;<span style="color:red;font-weight: bold;"> 125</span><sup style="color:red;font-weight: bold;">$</sup></p>
-							<button class="btn">Add to cart</button>
-					</div>
-					<div class="col-4">
-							<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/set-vot-cau-long-lining-phong-chinh-hang-1_1693172852.webp" style="height:230px;">
-							<h4>Set Lining Wind</h4>
-							<div class="rating">
-									<!-- ngoi sao nguyen ven -->
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-							</div>
-							<p><strike>130</strike><sup>$</sup>(-4%) &#8594;<span style="color:red;font-weight: bold;"> 125</span><sup style="color:red;font-weight: bold;">$</sup></p>
-							<button class="btn">Add to cart</button>
-					</div>
-					<div class="col-4">
-							<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/vot-cau-long-yonex-nanoflare-700-cyan-ma-jp-1.webp">
-							<h4>Yonex Nanoflare 700 Cyan</h4>
-							<div class="rating">
-									<!-- ngoi sao nguyen ven -->
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-							</div>
-							<p><span>135</span><sup>$</sup></p>
-							<button class="btn">Add to cart</button>
-					</div>
-					<div class="col-4">
-							<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/vot-cau-long-mizuno-fortius-27-prima-xanh-den-vang-chinh-hang-3.webp" style="height:230px;">
-							<h4>Mizuno Fortius 27 Prima</h4>
-							<div class="rating">
-									<!-- ngoi sao nguyen ven -->
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-							</div>
-							<p><span>199</span><sup>$</sup></p>
-							<button class="btn">Add to cart</button>
-					</div>
-					<div class="col-4">
-							<img src="https://cdn.shopvnb.com/img/300x300/uploads/san_pham/vot-cau-long-yonex-arcsaber-7-pro-ma-jp-2.webp" style="height:230px;">
-							<h4>Yonex Arcsaber 7 Pro</h4>
-							<div class="rating">
-									<!-- ngoi sao nguyen ven -->
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-							</div>
-							<p><span>159</span><sup>$</sup></p>
-							<button class="btn">Add to cart</button>
-					</div>
-					<div class="col-4">
-							<img src="https://cdn.shopvnb.com/img/300x300/uploads/san_pham/set-vot-cau-long-yonex-nanoflare-fl-noi-dia-2.webp" style="height:230px;">
-							<h4>Set Yonex Nanoflare FL</h4>
-							<div class="rating">
-									<!-- ngoi sao nguyen ven -->
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<!-- 1/2 ngoi sao -->
-									<i class="fa-regular fa-star-half-stroke"></i>
-							</div>
-							<div class="product-item-text">
-									<p><strike>145</strike><sup>$</sup>(-10%) &#8594;<span style="color:red;font-weight: bold;"> 130</span><sup style="color:red;font-weight: bold;">$</sup></p>
-							</div>
-							<button class="btn">Add to cart</button>
-					</div>
-					<div class="col-4">
-							<img src="https://cdn.shopvnb.com/img/300x300/uploads/san_pham/set-vot-cau-long-yonex-astrox-sv-noi-dia-2.webp" style="height:230px;">
-							<h4>Set Yonex Astrox SV</h4>
-							<div class="rating">
-									<!-- ngoi sao nguyen ven -->
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-							</div>
-							<p><strike>145</strike><sup>$</sup>(-10%) &#8594;<span style="color:red;font-weight: bold;"> 130</span><sup style="color:red;font-weight: bold;">$</sup></p>
-							<button class="btn">Add to cart</button>
-					</div>
-					
-					<div class="col-4">
-							<img src="https://cdn.shopvnb.com/img/300x300/uploads/san_pham/vot-cau-long-victor-tkfc-ltd-chinh-hang-1.webp" height="230px">
-							<h4>Victor TK-FC LTD</h4>
-							<div class="rating">
-									<!-- ngoi sao nguyen ven -->
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-							</div>
-							<p><span>159</span><sup>$</sup></p>
-							<button class="btn">Add to cart</button>
-					</div>
-					<div class="col-4">
-							<img src="https://cdn.shopvnb.com/img/300x300/uploads/san_pham/vot-cau-long-lining-calibar-900b-chinh-hang-5.webp" height="230px">
-							<h4>Lining Calibar 900B</h4>
-							<div class="rating">
-									<!-- ngoi sao nguyen ven -->
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-							</div>
-							<p><span>169</span><sup>$</sup></p>
-							<button class="btn">Add to cart</button>
-					</div>
-					<div class="col-4">
-							<img src="https://cdn.shopvnb.com/img/300x300/uploads/san_pham/vot-cau-long-yonex-astrox-88d-pro-chinh-hang-1.webp" height="230px">
-							<h4>Yonex Astrox 88D Pro</h4>
-							<div class="rating">
-									<!-- ngoi sao nguyen ven -->
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-							</div>
-							<p><span>160</span><sup>$</sup></p>
-							<button class="btn">Add to cart</button>
-					</div>
-					<div class="col-4">
-							<img src="https://cdn.shopvnb.com/img/300x300/uploads/san_pham/vot-cau-long-yonex-astrox-100zz-kurenai-do-new-2021-5.webp" height="230px">
-							<h4>Yonex Astrox 100zz-Kurenai-Red 2021</h4>
-							<div class="rating">
-									<!-- ngoi sao nguyen ven -->
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-							</div>
-							<p><strike>184</strike><sup>$</sup>(-3%) &#8594;<span style="color:red;font-weight: bold;"> 179</span><sup style="color:red;font-weight: bold;">$</sup></p>
-							<button class="btn">Add to cart</button>
-					</div>
-					<div class="col-4">
-							<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/set-vot-cau-long-kumpoo-99-pro-trang-tim-noi-dia-trung_1695254966.webp" height="230px">
-							<h4>Kumpoo PC-99 Pro (Black/Purple)</h4>
-							<div class="rating">
-									<!-- ngoi sao nguyen ven -->
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-							</div>
-							<p><span>34</span><sup>$</sup></p>
-							<button class="btn">Add to cart</button>
-					</div>
-					<div class="col-4">
-							<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/vot-cau-long-kumpoo-power-control-k520-pro-trang-chinh-hang-1_1.webp" height="230px">
-							<h4>Kumpoo Power Control K520 Pro</h4>
-							<div class="rating">
-									<!-- ngoi sao nguyen ven -->
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-							</div>
-							<p><span>29</span><sup>$</sup></p>
-							<button class="btn">Add to cart</button>
-					</div>
-					<div class="col-4">
-							<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/vot-cau-long-kumpoo-blade-power-control-xanh-chinh-hang-1.webp" height="230px">
-							<h4>Kumpoo Blade Power Control</h4>
-							<div class="rating">
-									<!-- ngoi sao nguyen ven -->
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-							</div>
-							<p><span>40</span><sup>$</sup></p>
-							<button class="btn">Add to cart</button>
-					</div>
-					<div class="col-4">
-							<img src="https://cdn.shopvnb.com/img/300x300/uploads/san_pham/vot-cau-long-kumpoo-power-control-e56ls-chinh-hang-2.webp" height="230px">
-							<h4>Kumpoo Power Control E56LS</h4>
-							<div class="rating">
-									<!-- ngoi sao nguyen ven -->
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-							</div>
-							<p><span>40</span><sup>$</sup></p>
-							<button class="btn">Add to cart</button>
-					</div>
-			<div class="col-4">
-					<img src="https://cdn.shopvnb.com/img/600x600/uploads/gallery/vot-cau-long-lining-turbo-charging-10b-noi-dia-trung-1_1696476502.webp" style="height:230px;">
-					<h4>Lining Turbo Charging 10B</h4>
-					<div class="rating">
-							<!-- ngoi sao nguyen ven -->
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-					</div>
-					<p><strike>200</strike><sup>$</sup>(-25%) &#8594;<span style="color:red;font-weight: bold;"> 150</span><sup style="color:red;font-weight: bold;">$</sup></p>
-					<button class="btn">Add to cart</button>
-			</div>
-			<div class="col-4">
-					<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/vot-cau-long-victor-ars-9-trang-xanh-noi-dia-trung-1_1701806909.webp">
-					<h4>Victor ARS-9 (White-Blue)</h4>
-					<div class="rating">
-							<!-- ngoi sao nguyen ven -->
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-					</div>
-					<p><span>49</span><sup>$</sup></p>
-					<button class="btn">Add to cart</button>
-			</div>
-			<div class="col-4">
-					<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/vot-cau-long-felet-woven-888-chinh-hang_1701804869.webp" style="height:230px;">
-					<h4>Felet-Woven 888</h4>
-					<div class="rating">
-							<!-- ngoi sao nguyen ven -->
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-					</div>
-					<p><span>140</span><sup>$</sup></p>
-					<button class="btn">Add to cart</button>
-			</div>
-			<div class="col-4">
-					<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/vot-cau-long-felet-woven-999-chinh-hang_1701805283.webp" style="height:230px;">
-					<h4>Felet-Woven 999</h4>
-					<div class="rating">
-							<!-- ngoi sao nguyen ven -->
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-					</div>
-					<p><span>140</span><sup>$</sup></p>
-					<button class="btn">Add to cart</button>
-			</div>
-			<div class="col-4">
-					<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/vot-cau-long-vs-challenger-720-xach-tay_1701375403.webp" style="height:230px;">
-					<h4>VS Challenger 720</h4>
-					<div class="rating">
-							<!-- ngoi sao nguyen ven -->
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-					</div>
-					<p><span>30</span><sup>$</sup></p>
-					<button class="btn">Add to cart</button>
-			</div>
-			<div class="col-4">
-					<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/set-vot-cau-long-kumpoo-k520s-hong-noi-dia-trung_1701735612.webp" style="height:230px;">
-					<h4>Kumpoo K520S-Pink</h4>
-					<div class="rating">
-							<!-- ngoi sao nguyen ven -->
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-					</div>
-					<p><span>40</span><sup>$</sup></p>
-					<button class="btn">Add to cart</button>
-			</div>
-			<div class="col-4">
-					<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/vot-cau-long-mizuno-altius-01-feels-ma-jp-8_1701374815.webp" style="height:230px;">
-					<h4>Mizuno Altius 01 Feels</h4>
-					<div class="rating">
-							<!-- ngoi sao nguyen ven -->
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<!-- 1/2 ngoi sao -->
-							<i class="fa-regular fa-star-half-stroke"></i>
-					</div>
-					<div class="product-item-text">
-							<p><span>170</span><sup>$</sup></p>
-					</div>
-					<button class="btn">Add to cart</button>
-			</div>
-			<div class="col-4">
-					<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/vot-cau-long-vs-challenger-750-xach-tay_1700856680.webp" style="height:230px;">
-					<h4>VS Challenger 750</h4>
-					<div class="rating">
-							<!-- ngoi sao nguyen ven -->
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-					</div>
-					<p><span>25</span><sup>$</sup></p>
-					<button class="btn">Add to cart</button>
-			</div>
-			<div class="col-4">
-					<img src="https://cdn.shopvnb.com/img/600x600/uploads/san_pham/set-vot-cau-long-lining-axforce-90-xanh-dragon-max-chinh-hang-5.webp" style="height:230px;">
-					<h4>Lining Axforce 90 Dragon Blue MAX</h4>
-					<div class="rating">
-							<!-- ngoi sao nguyen ven -->
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-					</div>
-					<p><span>150</span><sup>$</sup></p>
-					<button class="btn">Add to cart</button>
-			</div>
-			<div class="col-4">
-					<img src="https://cdn.shopvnb.com/img/600x600/uploads/gallery/vot-cau-long-lining-axforce-bigbang-trang-noi-dia-trung-5.webp" style="height:230px;">
-					<h4>Lining Axforce BigBang (White)</h4>
-					<div class="rating">
-							<!-- ngoi sao nguyen ven -->
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-					</div>
-					<p><span>120</span><sup>$</sup></p>
-					<button class="btn">Add to cart</button>
-			</div>
-			<div class="col-4">
-					<img src="https://cdn.shopvnb.com/img/600x600/uploads/gallery/vot-cau-long-lining-halbertec-8000-ma-jp_1697395953.webp" style="height:250px;">
-					<h4>Lining Halbertec</h4>
-					<div class="rating">
-							<!-- ngoi sao nguyen ven -->
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-					</div>
-					<p><span>89</span><sup>$</sup></p>
-					<button class="btn">Add to cart</button>
-			</div>
-			<div class="col-4">
-					<img src="https://cdn.shopvnb.com/img/600x600/uploads/san_pham/vot-cau-long-lining-tectonic-1-chinh-hang-1.webp" style="height:250px;">
-					<h4>Lining Tectonic 1</h4>
-					<div class="rating">
-							<!-- ngoi sao nguyen ven -->
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-					</div>
-					<p><span>99</span><sup>$</sup></p>
-					<button class="btn">Add to cart</button>
-			</div>
-			<div class="col-4">
-					<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/vot-cau-long-felet-arcana-80s-blk-wht-chinh-hang-1_1699307285.webp" height="230px">
-					<h4>Felet Arcana 80S (Black-White)</h4>
-					<div class="rating">
-							<!-- ngoi sao nguyen ven -->
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-					</div>
-					<p><span>49</span><sup>$</sup></p>
-					<button class="btn">Add to cart</button>
-			</div>
-			<div class="col-4">
-					<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/vot-cau-long-felet-hi-tex-200-wht-grey-chinh-hang-1_1699389112.webp" height="230px">
-					<h4>Felet Hi-Tex 200 (White-Grey)</h4>
-					<div class="rating">
-							<!-- ngoi sao nguyen ven -->
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-					</div>
-					<p><span>35</span><sup>$</sup></p>
-					<button class="btn">Add to cart</button>
-			</div>
-			<div class="col-4">
-					<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/vot-cau-long-yonex-nanoflare-800-game-chinh-hang_1698803663.webp" style="height:230px;">
-					<h4>Yonex Nanoflare 800 Game</h4>
-					<div class="rating">
-							<!-- ngoi sao nguyen ven -->
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-					</div>
-					<p><span>80</span><sup>$</sup></p>
-					<button class="btn">Add to cart</button>
-			</div>
-			<div class="col-4">
-					<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/vot-cau-long-yonex-nanoflare-800-pro-chinh-hang_1698803472.webp" height="250px">
-					<h4>Yonex Nanoflare 800 Pro</h4>
-					<div class="rating">
-							<!-- ngoi sao nguyen ven -->
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-					</div>
-					<p><span>169</span><sup>$</sup></p>
-					<button class="btn">Add to cart</button>
-			</div>
-			<div class="col-4">
-					<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/vot-cau-long-victor-ars-77f-noi-dia-trung_1698718403.webp" style="height:250px;">
-					<h4>Victor ARS-77F</h4>
-					<div class="rating">
-							<!-- ngoi sao nguyen ven -->
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-					</div>
-					<p><span>119</span><sup>$</sup></p>
-					<button class="btn">Add to cart</button>
-			</div>
-			<div class="col-4">
-					<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/vot-cau-long-victor-auraspeed-90f-tim-noi-dia-trung_1699307192.webp" height="230px">
-					<h4>Victor Auraspeed 90F-Purple</h4>
-					<div class="rating">
-							<!-- ngoi sao nguyen ven -->
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-					</div>
-					<p><span>159</span><sup>$</sup></p>
-					<button class="btn">Add to cart</button>
-			</div>
-			<div class="col-4">
-					<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/vot-cau-long-apacs-z-power-900-rp-chinh-hang_1698628933.webp" style="height:230px;">
-					<h4>Apacs Z-Power 900RP</h4>
-					<div class="rating">
-							<!-- ngoi sao nguyen ven -->
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-					</div>
-					<p><span>49</span><sup>$</sup></p>
-					<button class="btn">Add to cart</button>
-			</div>
-			<div class="col-4">
-					<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/vot-cau-long-lining-hc-1600-red-noi-dia-trung_1698460696.webp" height="230px">
-					<h4>Lining HC 1600-Red</h4>
-					<div class="rating">
-							<!-- ngoi sao nguyen ven -->
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-					</div>
-					<p><span>40</span><sup>$</sup></p>
-					<button class="btn">Add to cart</button>
-			</div>
-			<div class="col-4">
-					<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/vot-cau-long-yonex-arcsaber-73-light-rbyr-chinh-hang_1698453315.webp" height="230px">
-					<h4>Yonex Arcsaber-73 Light</h4>
-					<div class="rating">
-							<!-- ngoi sao nguyen ven -->
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-					</div>
-					<p><span>30</span><sup>$</sup></p>
-					<button class="btn">Add to cart</button>
-			</div>
-			<div class="col-4">
-					<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/vot-cau-long-lining-windstorm-72-blue-chinh-hang.webp" style="height:210px;">
-					<h4>Lining Windstorm-72-Blue</h4>
-					<div class="rating">
-							<!-- ngoi sao nguyen ven -->
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-					</div>
-					<p><span>99</span><sup>$</sup></p>
-					<button class="btn">Add to cart</button>
-			</div>
-			<div class="col-4">
-					<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/set-vot-cau-long-vs-dragon-noi-dia-trung_1697680127.webp" height="230px">
-					<h4>Set VS Dragon</h4>
-					<div class="rating">
-							<!-- ngoi sao nguyen ven -->
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-					</div>
-					<p><span>89</span><sup>$</sup></p>
-					<button class="btn">Add to cart</button>
-			</div>
-			<div class="col-4">
-					<img src="https://cdn.shopvnb.com/img/300x300/uploads/gallery/set-vot-cau-long-kamito-tm-legend-2023-chinh-hang_1696819201.webp" style="height:210px;">
-					<h4>Set Kamito-TM-Legend 2023</h4>
-					<div class="rating">
-							<!-- ngoi sao nguyen ven -->
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-					</div>
-					<p><span>89</span><sup>$</sup></p>
 					<button class="btn">Add to cart</button>
 			</div>
 			<div class="col-4">
@@ -1484,16 +1174,15 @@
         </div>
         <button class="btn">Add to cart</button>
 </div>
+	</div>
+
+
+    
+    
 					
-		</div>
-<!-- 		<div class="page-btn">
-			<span><a href="#">1</a></span>
-			<span><a href="index2.html">2</a></span>
-			<span><a href="index3.html" >3</a></span>
-			<span><a href="index4.html">4</a></span>
-			<span><a href="#">&#8594;</a></span>
-		</div> -->
-	</section>
+					
+</div>
+</section>
 </div>
 	
 <section class="cart">
