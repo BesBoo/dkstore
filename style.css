@@ -12,8 +12,9 @@ header{
 	top:0;
 	left:0;
 	width:100%;
+  height:115px;
 	padding-bottom: 3px;
-	border-bottom: 5px solid #ff5722;
+	border-bottom: 5px solid #222932;
 	transition: all 0.5s ease-in-out;
 }
 html{
@@ -23,15 +24,17 @@ html{
 	display:flex;
 	align-items: center;
 	padding:10px;
-	background: #2d4059;
+  height:100px;
+	background: #222932;
 	border-bottom-left-radius: 20px;
 	border-bottom-right-radius: 20px;
 	opacity: 1;
+  box-shadow: 0 0 40px 0px #8dc6ff;
 }
 nav{
 	flex:1;
 	text-align: right;
-	font-size:20px;
+	font-size:27px;
 	padding-right:250px;
 }
 nav ul{
