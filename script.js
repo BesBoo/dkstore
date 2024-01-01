@@ -93,6 +93,10 @@ cartBtn.addEventListener("click",function(){
 //----------------- test dong bo ----------------------------
 // In index.html:
 
+
+
+
+
 //----------------------------------------------------
 
 //---------------------------- payment------------------------------
@@ -161,31 +165,7 @@ function search() {
     }
   });
 }
-
-function sortByPrice() {
-  const productItems = document.querySelectorAll("#product-list .col-4");
-
-  // Sort products by price
-  productItems.sort((productA, productB) => {
-    const priceA = Number(productA.querySelector("p").textContent);
-    const priceB = Number(productB.querySelector("p").textContent);
-
-    return priceA - priceB;
-  });
-
-  // Update the product list
-  const productList = document.getElementById("product-list");
-  productList.innerHTML = "";
-
-  for (const productItem of productItems) {
-    productList.appendChild(productItem);
-  }
-}
-
-// Add event listener
-document.querySelector(".btn").addEventListener("click", sortByPrice);
-
-
+//-------------------------------------------------------------------
 
 // const search= () =>{
 //   const searchbox = document.getElementById("search-item").value.toUpperCase();
@@ -206,3 +186,6 @@ document.querySelector(".btn").addEventListener("click", sortByPrice);
 //     }
 //   }
 // }
+
+//---------------------------------------------------------------
+
