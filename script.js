@@ -93,10 +93,6 @@ cartBtn.addEventListener("click",function(){
 //----------------- test dong bo ----------------------------
 // In index.html:
 
-
-
-
-
 //----------------------------------------------------
 
 //---------------------------- payment------------------------------
@@ -151,3 +147,62 @@ submitButton.addEventListener("click", () => {
   }
 });
 
+function search() {
+  const searchTerm = document.getElementById("search-item").value.toLowerCase();
+  const productItems = document.querySelectorAll("#product-list .col-4");
+
+  productItems.forEach(function (productItem) {
+    const productName = productItem.querySelector("h4").textContent.toLowerCase();
+
+    if (productName.includes(searchTerm)) {
+      productItem.style.display = "block";
+    } else {
+      productItem.style.display = "none";
+    }
+  });
+}
+
+function sortByPrice() {
+  const productItems = document.querySelectorAll("#product-list .col-4");
+
+  // Sort products by price
+  productItems.sort((productA, productB) => {
+    const priceA = Number(productA.querySelector("p").textContent);
+    const priceB = Number(productB.querySelector("p").textContent);
+
+    return priceA - priceB;
+  });
+
+  // Update the product list
+  const productList = document.getElementById("product-list");
+  productList.innerHTML = "";
+
+  for (const productItem of productItems) {
+    productList.appendChild(productItem);
+  }
+}
+
+// Add event listener
+document.querySelector(".btn").addEventListener("click", sortByPrice);
+
+
+
+// const search= () =>{
+//   const searchbox = document.getElementById("search-item").value.toUpperCase();
+//   const storeites = document.getElementById("product-list")
+//   const products = document.querySelectorAll(".col-4")
+//   const pname = document.getElementsByTagName("h4")
+//   for(var i=0;i<pname.length;i++){
+//     let match = products[i].getElementsByTagName('h4')[0];
+    
+//     if(match){
+//       let textvalue = match.textContent || match.innerHTML
+//       if(textvalue.toUpperCase().indexOf(searchbox) > -1){
+//         products[i].style.display = "";
+        
+//       }else{
+//         products[i].style.display = "none";
+//       }
+//     }
+//   }
+// }
