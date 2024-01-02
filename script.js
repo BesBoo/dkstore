@@ -189,3 +189,24 @@ function search() {
 
 //---------------------------------------------------------------
 
+// const productList = document.getElementById("product-list");
+// const filterButtons = document.querySelectorAll(".control button");
+
+// filterButtons.forEach(button => {
+//   button.addEventListener("click", () => {
+//     const selectedType = button.getAttribute("type");
+
+//     const products = productList.querySelectorAll(".col-4");
+
+//     products.forEach(product => {
+//       const productType = product.getAttribute("type");
+
+//       if (productType === selectedType) {
+//         products.style.display = "block";
+//       } else {
+//         products.style.display = "none";
+//       }
+//     });
+//   });
+// });
+
